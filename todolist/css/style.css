@@ -1,0 +1,15 @@
+* {
+  box-sizing: content-box;  
+}
+
+.bg {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgb(235, 122, 178),rgb(216, 93, 99));
+}
+
+.status {
+  background: palevioletred;
+  min-width: 1rem;
+  min-height: 1rem;
+}
