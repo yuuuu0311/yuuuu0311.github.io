@@ -25,7 +25,6 @@ btnAdd.addEventListener('click', function(event){
             desc: `${description.value}`,
             time: `${new Date().getTime()}`
         })
-        
         showEvent()
 
     }
@@ -38,14 +37,14 @@ function showEvent() {
     let card = ""
     
     todoArray.forEach(function(item,index){
-        card += ` <div class="card mb-2">
+        card += ` <div class="card mb-2 mw-100">
         <div class="card-header d-flex flex-fill justify-content-between">
             <div class="d-flex flex-grow-0 align-items-center gap-2">
                 <span class="status"></span>
                 <strong>${item.title}</strong>
             </div>
             <button type="button" class="btn-close" aria-label="Close" value="${index}"></button>                            </div>
-        <div class="card-body d-flex pb-0">
+        <div class="card-body d-flex flex-column pb-2">
             <p>${item.desc}</p>
             <small class="ms-auto"><span class="time">0</span>mins ago</small>
         </div>
@@ -100,14 +99,14 @@ function afterDelete(){
     let card = ""
     
     todoArray.forEach(function(item,index){
-        card += ` <div class="card mb-2">
+        card += ` <div class="card mb-2 mw-100">
         <div class="card-header d-flex flex-fill justify-content-between">
             <div class="d-flex flex-grow-0 align-items-center gap-2">
                 <span class="status"></span>
                 <strong>${item.title}</strong>
             </div>
             <button type="button" class="btn-close" aria-label="Close" value="${index}"></button>                            </div>
-        <div class="card-body d-flex pb-0">
+        <div class="card-body d-flex flex- pb-0">
             <p>${item.desc}</p>
             <small class="ms-auto"><span class="time">0</span>mins ago</small>
         </div>
