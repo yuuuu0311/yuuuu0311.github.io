@@ -12,16 +12,17 @@
     <title>Todo yo!</title>
   </head>
   <body>
-      <section class="bg d-flex flex-column justify-content-center align-items-center">
+      <section class="bg d-flex flex-column justify-content-center align-items-center py-5">
 
-        <h1 class="text-center fw-bolder">Todo-list</h1>
-        <h5 class="text-center">currently have <span class="amount fw-bolder">0</span> things waiting for u !!</h5>
-          <div class="container d-flex justify-content-sm-center align-items-stretch">
+        <h1 class="text-center fw-bolder title">Todo-list</h1>
+        <h5 class="text-center m-xl-0 mx-5 mb-3 pb-2 pb-xl-3">currently have <span class="amount fw-bolder">0</span> events waiting for u !!</h5>
+
+          <div class="d-flex justify-content-center align-items-stretch flex-column flex-xl-row fixed">
             <div class="input-box px-3">
 
                 <form class="">
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Event name</label>
+                      <label for="exampleInputEmail1" class="form-label">Event</label>
                       <input type="text" class="event form-control" placeholder="new event !!" aria-label="Example text with button addon" aria-describedby="button-addon1">
                     </div>
                     <div class="mb-3">
@@ -33,7 +34,7 @@
 
             </div>
 
-            <div class="d-flex w-25 py-4">
+            <div class="d-flex h-100 w-auto todo-part py-lg-0 py-4 scrollbar todo-card">
                 <div class="todo flex-fill">
                     <div class="item-list mx-1 my-2 todo-list">
                         <!-- event card -->
@@ -61,6 +62,7 @@
 
     <!-- Optional JavaScript; choose one of the two! -->
     <script src="./js/all.js"></script>
+    <script src="./js/time.js"></script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 

@@ -22,9 +22,10 @@ btnAdd.addEventListener('click', function(event){
         // do something here
         todoArray.push({
             title: `${inputBox.value}`,
-            desc: `${description.value}`
+            desc: `${description.value}`,
+            time: `${new Date().getTime()}`
         })
-        console.log();
+        console.log(todoArray);
         showEvent()
 
     }
@@ -46,7 +47,7 @@ function showEvent() {
             <button type="button" class="btn-close" aria-label="Close" value="${index}"></button>                            </div>
         <div class="card-body d-flex pb-0">
             <p>${item.desc}</p>
-            <small class="ms-auto">mins ago</small>
+            <small class="ms-auto"><span class="time">0</span>mins ago</small>
         </div>
     </div>`
     })
@@ -108,7 +109,7 @@ function afterDelete(){
             <button type="button" class="btn-close" aria-label="Close" value="${index}"></button>                            </div>
         <div class="card-body d-flex pb-0">
             <p>${item.desc}</p>
-            <small class="ms-auto">mins ago</small>
+            <small class="ms-auto"><span class="time">0</span>mins ago</small>
         </div>
     </div>`
     })
