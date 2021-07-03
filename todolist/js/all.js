@@ -25,7 +25,7 @@ btnAdd.addEventListener('click', function(event){
             desc: `${description.value}`,
             time: `${new Date().getTime()}`
         })
-        console.log(todoArray);
+        
         showEvent()
 
     }
