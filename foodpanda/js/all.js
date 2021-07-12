@@ -4,7 +4,7 @@ let cities
 
 // get data
     // cities
-axios.get(`http://api.opencube.tw/twzipcode/get-citys`)
+axios.get(`${cors}http://api.opencube.tw/twzipcode/get-citys`)
 .then(res => {
     cities = res.data.data
 
