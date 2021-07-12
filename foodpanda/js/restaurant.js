@@ -15,7 +15,7 @@ axios.get(`${url}`)
     data = res.data
     console.log(data[0]);
 
-    let restaurantCard = data.slice(8, 16)
+    let restaurantCard = data.slice(16, 24)
 
 
     new Vue({
