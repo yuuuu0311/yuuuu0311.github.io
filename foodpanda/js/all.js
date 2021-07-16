@@ -1,5 +1,6 @@
 console.log('success');
 let cities
+const cors = 'https://cors-anywhere.herokuapp.com/';
 
 
 // get data
