@@ -14,20 +14,23 @@
         />
         <!-- custom css -->
         <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/screen.css" />
+        <!-- fw cdn -->
+        <script src="https://kit.fontawesome.com/770d2fbdb3.js" crossorigin="anonymous"></script>
         <title>foodpanda mockup</title>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow sticky-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img
-                        src="https://cdn.worldvectorlogo.com/logos/bootstrap-5-1.svg"
+                        src="./img/foodpanda.png"
                         alt=""
-                        width="30"
+                        width="24"
                         height="24"
                         class="d-inline-block align-text-top"
                     />
-                    Bootstrap
+                    foodpanda
                 </a>
 
                 <button
@@ -44,49 +47,18 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" aria-current="page" href="#">訂購餐點</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a
-                                class="nav-link dropdown-toggle"
-                                href="#"
-                                id="navbarDropdown"
-                                role="button"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                            >
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li>
-                                    <a class="dropdown-item" href="#">Action</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                </li>
-                                <li>
-                                    <hr class="dropdown-divider" />
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"
-                                >Disabled</a
-                            >
+                            <a class="nav-link" href="#restaurant">推薦餐廳</a>
                         </li>
                     </ul>
                     <button
-                        class="btn btn-success"
+                        class="btn btn-pinky"
                         data-bs-toggle="modal"
                         data-bs-target="#exampleModalToggle"
                     >
-                        logIn
+                        登入
                     </button>
                 </div>
             </div>
@@ -94,63 +66,189 @@
 
         <main class="d-flex flex-column justify-content-center align-item-center">
             <section
-                class="bg-success d-flex flex-column justify-content-center align-items-center"
-                id="test"
+                class="
+                    d-flex
+                    justify-content-center
+                    align-items-center
+                    position-relative
+                    overflow-hidden
+                "
             >
-                <div class="section-box">
-                    <h3>{{message}}</h3>
-                    <div>
-                        <div class="input-group mb-3">
-                            <label class="input-group-text" for="inputGroupSelect01"
-                                >Location</label
-                            >
+                <div class="hero-img h-100 w-100 position-absolute end-0 shadow-lg me-5">
+                    <div class="hero-drop h-100 w-100 position-absolute end-0 shadow-lg"></div>
+                </div>
+                <div class="w-75 ps-5">
+                    <h1 class="pb-4 fw-bolder">把您喜愛的美食親手外送給您</h1>
+                    <div class="p-3 bg-light w-75 shadow-lg">
+                        <div class="input-group">
                             <select class="form-select form-select-lg" id="inputGroupSelect01">
-                                <option selected>Choose...</option>
-                                <option v-for="location in list" value="1">{{location}}</option>
+                                <option selected>選擇您所在的城市</option>
+                                <option value="1">城市1</option>
+                                <option value="2">城市2</option>
+                                <option value="3">城市3</option>
+                                <option value="4">城市4</option>
+                                <option value="5">城市5</option>
                             </select>
-
-                            <div>
-                                <button type="button" class="btn btn-danger">Danger</button>
-                            </div>
-                            or
-                            <div>
-                                <button type="button" class="btn btn-danger">Danger</button>
+                            <div class="d-flex ps-4 w-25">
+                                <button class="btn btn-pinky">外送</button>
+                                <div class="d-flex align-items-center px-1">
+                                    <span>或</span>
+                                </div>
+                                <button class="btn btn-pinky">外帶自取</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="bg-danger d-flex flex-column justify-content-center p-5" id="join">
-                {{ join }}
-
-                <div class="w-50 bg-white">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nesciunt
-                        nostrum accusantium recusandae molestias atque eaque eius magni officia modi
-                        tempora placeat quam quis vero dolorem mollitia, labore qui veniam.
+            <section class="position-relative overflow-hidden" id="join">
+                <div class="overflow-hidden">
+                    <img
+                        src="https://images.deliveryhero.io/image/foodpanda/home-vendor-tw.jpg?width=2000&height=1280"
+                        class="img-fluid opacity-50 position-absolute"
+                        alt=""
+                    />
+                </div>
+                <div class="w-50 bg-white position-absolute top-50 ms-5 px-5 py-4 shadow">
+                    <h3 class="fw-bolder">與foodpanda合作，讓更多人享受你的餐點跟商品吧！</h3>
+                    <p class="text-secondary pt-2">
+                        想要上千名新顧客試試你的美食嗎？我們想，相信你也是！
+                        <span> </span>
+                        該怎麼做呢？我們會協助你上傳菜單或商品清單、幫你處理訂單、訂單確認後我們將請外送夥伴前往你的商店去取件，再將餐點或商品外送給顧客們。
+                        <span> </span>
+                        還等什麼？一起和我們開始這個外送的旅程吧！
                     </p>
-                    <button>{{join}}</button>
+                    <button class="btn-pinky btn float-end w-25">加入我們</button>
                 </div>
             </section>
-            <section class="bg-primary p-5" id="restaurant">
-                <div class="row row-cols-1 row-cols-md-4 g-4">
-                    <div class="col" v-for="card in restaurantCard">
+            <section class="bg-light p-5 position-relative shadow-lg" id="restaurant">
+                <div class="position-absolute top-up-5">
+                    <h1 class="fw-bolder text-secondary hero-title">推薦餐廳</h1>
+                </div>
+                <div class="row row-cols-1 row-cols-md-4 g-4 city">
+                    <!-- <div class="col">
                         <div class="card h-100">
                             <img
-                                :src="card.download_url"
+                                src="./img/city_1.jpg"
                                 class="card-img-top"
                                 alt="..."
                                 style="max-height: 64%"
                             />
                             <div class="card-body">
-                                <h5 class="card-title">{{card.id}}</h5>
-                                <p class="card-text">{{card.author}}</p>
+                                <h5 class="card-title">Title</h5>
+                                <p class="card-text">article</p>
                             </div>
                         </div>
+                    </div> -->
+                </div>
+                <div class="row row-cols-1 row-cols-md-4 g-4 city">
+                    <!-- <div class="col">
+                        <div class="card h-100">
+                            <img
+                                src="./img/city_1.jpg"
+                                class="card-img-top"
+                                alt="..."
+                                style="max-height: 64%"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title">Title</h5>
+                                <p class="card-text">article</p>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </section>
+            <section class="bg-white position-relative">
+                <h1 class="p-5 fw-bolder text-secondary">下載foodpanda App</h1>
+                <div class="h-50 bg-pinky d-flex px-5">
+                    <div class="p-5 position-relative">
+                        <h3 class="pt-4 fw-bolder">你最喜愛的美食與生鮮雜貨都在foodpanda app</h3>
+                        <p>手指輕點，從美食到生鮮雜貨，上萬種商品馬上點馬上到－立即下載！</p>
+                        <div class="w-50 pb-5 d-inline-flex position-absolute bottom-0">
+                            <a
+                                href="https://apps.apple.com/app/id758103884?mt=8"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img src="./img/as.png" class="img-fluid p-1" alt="" />
+                            </a>
+                            <a
+                                href="https://play.google.com/store/apps/details?id=com.global.foodpanda.android&referrer=adjust_reftag%3Dcax3GHPeGLzJl%26utm_source%3DWebsite%26utm_campaign%3DTW_Homepage_Android"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img src="./img/gp.png" class="img-fluid p-1" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-50 position-absolute start-50">
+                        <img
+                            src="https://images.deliveryhero.io/image/foodpanda/home-foodpanda-apps.png"
+                            class="img-fluid"
+                            alt=""
+                        />
                     </div>
                 </div>
             </section>
-            <section class="bg-secondary">contact us</section>
+            <section class="bg-white p-5 position-relative overflow-hidden shadow-lg">
+                <div
+                    class="bg-white w-50 position-absolute top-25 shadow-lg p-5 cooperation-article"
+                >
+                    <h3 class="fw-bolder">foodpanda【企業優惠方案】</h3>
+                    <p class="text-secondary">
+                        你的專屬管家上線囉－從在家工作的三餐、會議餐點到下午茶、生日聚會，線上訂馬上到…
+                        交給我們就對囉！
+                    </p>
+                    <button class="btn btn-pinky w-25 float-end">了解更多</button>
+                </div>
+                <div class="overflow-hidden">
+                    <img
+                        src="https://images.deliveryhero.io/image/foodpanda/home-corporate-tw.jpg?width=2000&height=1280|https://images.deliveryhero.io/image/foodpanda/home-corporate-tw.jpg?width=4000&height=2560"
+                        class="img-fluid cooperation-bg position-absolute"
+                        alt=""
+                    />
+                </div>
+            </section>
+            <footer class="p-5">
+                <h2 class="text-secondary fw-bolder">聯絡我們</h2>
+                <div class="d-flex py-4">
+                    <div class="flex-fill text-secondary">
+                        <h5 class="fw-bolder">客服專線</h5>
+                        <p class="ps-5">(02) 1234-5678#123</p>
+                        <h5 class="fw-bolder">客服信箱</h5>
+                        <p class="ps-5">foodpanda@foodpanda.com</p>
+                    </div>
+                    <div class="flex-fill">
+                        <ul class="list-unstyled d-flex justify-content-end pe-5 text-">
+                            <li class="pe-2">
+                                <a href="#"><img src="./img/instagram.png" alt="" /></a>
+                            </li>
+                            <li class="pe-2">
+                                <a href="#"><img src="./img/facebook.png" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./img/twitter.png" alt="" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <ul class="list-unstyled d-flex list-p1 justify-content-center footer-list">
+                        <li><a href="#">新聞室</a></li>
+                        <li><a href="#">客服中心</a></li>
+                        <li><a href="#">服務條款</a></li>
+                        <li><a href="#">隱私權條款</a></li>
+                        <li><a href="#">下載foodpanda App</a></li>
+                        <li><a href="#">企業徵才</a></li>
+                    </ul>
+                </div>
+                <div class="text-center">
+                    <p>
+                        Copyright © 2021 foodpanda. All rights reserved. <br />版權所有© 2021
+                        foodpanda
+                    </p>
+                    <p>注意! 此網站僅作為練習使用，請勿轉載</p>
+                </div>
+            </footer>
 
             <!-- login & SignIn Modal -->
             <div
@@ -163,7 +261,9 @@
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalToggleLabel">Modal 1</h5>
+                            <h5 class="modal-title fw-bolder" id="exampleModalToggleLabel">
+                                歡迎!
+                            </h5>
                             <button
                                 type="button"
                                 class="btn-close"
@@ -204,20 +304,22 @@
                                         id="exampleCheck1"
                                     />
                                     <label class="form-check-label" for="exampleCheck1"
-                                        >Remember me</label
+                                        >記住帳號</label
                                     >
                                 </div>
-                                <button type="submit" class="btn btn-primary">Login</button>
+                                <div class="d-inline float-end">
+                                    <button type="submit" class="btn btn-pinky">登入</button>
+                                </div>
                             </form>
                         </div>
                         <div class="modal-footer">
                             <button
-                                class="btn btn-primary"
+                                class="btn btn-pinky"
                                 data-bs-target="#exampleModalToggle2"
                                 data-bs-toggle="modal"
                                 data-bs-dismiss="modal"
                             >
-                                Open second modal
+                                註冊
                             </button>
                         </div>
                     </div>
@@ -304,10 +406,8 @@
         ></script>
         <!-- axios cdn -->
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-        <!-- vue cdn -->
-        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
         <!-- costume js-->
-        <script src="./js/all.js"></script>
+        <!-- <script src="./js/all.js"></script> -->
         <script src="./js/restaurant.js"></script>
 
         <!-- Vue here -->
