@@ -1,0 +1,10 @@
+@media screen and (min-width: 767px) {
+    section {
+        background: blueviolet;
+    }
+
+    nav {
+        position: fixed;
+        background: darkslategray;
+    }
+}

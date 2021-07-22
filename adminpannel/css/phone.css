@@ -1,0 +1,50 @@
+@media screen and (min-width: 368px) and (max-width: 768px) {
+    section {
+        background: greenyellow;
+        padding: 0.4rem 1rem;
+    }
+
+    /* navbar */
+    .menu {
+        position: relative;
+        overflow-y: hidden;
+        min-width: 100vw;
+        max-height: 10vh;
+        min-height: 10vh;
+        background: violet;
+        transition: min-height 1s ease;
+    }
+
+    .nav-logo {
+        position: relative;
+        min-width: 90%;
+    }
+
+    .nav-search {
+        position: absolute;
+        top: 100%;
+    }
+
+    .nav-category {
+        position: relative !important;
+        top: auto;
+        min-width: 90%;
+    }
+
+    .nav-user {
+        position: absolute !important;
+        top: auto;
+        bottom: auto;
+        /* min-height: 56px; */
+    }
+
+    .content {
+        padding: 0;
+        transition: none;
+    }
+
+    .nav-active {
+        min-height: 100vh;
+        transition: min-height 1s ease;
+    }
+}
