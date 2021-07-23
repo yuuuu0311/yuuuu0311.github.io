@@ -7,4 +7,21 @@
         position: fixed;
         background: darkslategray;
     }
+
+    .colleague-row {
+        overflow-x: scroll;
+        min-width: 80%;
+        padding-top: 2rem;
+    }
+
+    .colleague-row > .colleague-profile {
+        min-width: 8rem;
+        max-width: 8rem;
+        min-height: 8rem;
+        max-height: 8rem;
+        margin: 0 0 0 1.6rem;
+        background: rgb(9, 11, 14);
+        border: none;
+        border-radius: 100%;
+    }
 }
