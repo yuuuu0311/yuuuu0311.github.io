@@ -1,0 +1,17 @@
+/* .canvas {
+  height: 100vh;
+  width: 100vw;
+} */
+
+.Area_canvas {
+  position: relative;
+}
+.Area_canvas canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.Area_canvas .cover {
+  opacity: 0;
+}
