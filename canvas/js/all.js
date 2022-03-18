@@ -9,10 +9,10 @@ let wHeight = window.innerHeight
 content.width = cover.width = wWidth
 content.height = cover.height = wHeight
 
-
-
+// random pic
+let imgArray = ['./img/01.jpeg','./img/02.jpeg']
 let img = new Image()
-img.src = 'img/boji.jpeg'
+img.src = imgArray[Math.floor(Math.random()*imgArray.length)]
 
 
 window.onload = () => {
@@ -62,13 +62,13 @@ function eventMove(event){
     event.preventDefault(); //取消冒泡
 
     if(eventDown == true){
-        let x = event.pageX - this.offsetLeft
-        let y = event.pageY - this.offsetTop
 
         if( event.changedTouches ){
             event = event.changedTouches[event.changedTouches.length-1]
         }
 
+        let x = event.pageX - this.offsetLeft
+        let y = event.pageY - this.offsetTop
         canvasCover.beginPath()
         canvasCover.arc(x, y, 50, 0, Math.PI * 2) // (x, y, radius, startAngle, endAngle [, counterclockwise])
         canvasCover.fill()
