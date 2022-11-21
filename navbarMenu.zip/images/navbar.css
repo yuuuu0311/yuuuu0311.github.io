@@ -1,0 +1,249 @@
+body { background-color: olivedrab; }
+section { height: 500vh; background-color: olivedrab;}
+
+.WRAPPER nav * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    /* 要把 WRAPPER 的 overflow 拿掉*/
+    position: sticky;
+    top: 0px;
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+
+.WRAPPER .new_tag {
+    color: white;
+    background-color: #3b60c1cc;
+    padding: 0 0.4rem 0.1rem;
+    margin: 0 0 0 1rem;
+    border-radius: 3px;
+    text-transform: capitalize;
+    
+}
+
+.WRAPPER .tab h5{
+    font-weight: bolder;
+    color: #0032a1;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.WRAPPER .tab ul a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    white-space: nowrap;
+    letter-spacing: 0.05rem;    
+}
+
+.WRAPPER .tab ul a li{
+    display: inline-block;
+}
+
+
+@media screen and (min-width : 768px){
+
+    .WRAPPER .logo{
+        position: relative;
+        text-align: center;
+        background-color: white;
+    }
+
+    .WRAPPER .tab_title_box {
+        display: flex;
+        justify-content: space-around;
+        align-items: stretch;
+        padding:1.6rem 8rem;
+        background-color: #f3f3f3;
+        letter-spacing: 0.1rem;
+    }
+
+    .WRAPPER .tab_title_box .tab_title {
+        position: relative;
+        cursor: pointer;
+        font-weight: 600;
+    }
+
+    .WRAPPER .tab_title_box .tab_title::after {
+        display: block;
+        content: "";
+        width: 0;
+        height: 3px;
+        background-color: black;
+        transition: width 0.3s ease-out;
+        position: absolute;
+        bottom: -7px;
+        left: 50%;
+        transform: translateX(-50%); 
+    }
+
+    .WRAPPER .tab_title_box .tab_title.active::after {
+        display: block;
+        content: "";
+        width: 100%;
+        height: 3px;
+        background-color: black;
+        transition: width 0.3s ease-out;
+        position: absolute;
+        bottom: -7px;
+        left: 50%;
+        transform: translateX(-50%);        
+    }    
+
+    .WRAPPER .tab_box {
+        display: none;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 1rem 10rem 3rem;
+        text-align: left;
+        background-color: white;
+        bottom: 0;
+
+        height: 0;
+        visibility: hidden;
+        overflow: hidden;
+        opacity: 0;
+        transition: display 0 linear, opacity 0.3 linear;
+    }
+
+    .WRAPPER .tab_box.active {
+        display: flex;
+        height: auto;
+        visibility: visible;
+        overflow: hidden;
+        opacity: 1;
+        transition: display 0 linear, opacity 0.3 linear;
+    }
+
+    .WRAPPER .tab {
+        flex-basis: calc(100%/4);
+        padding-top: 1rem;
+    }
+
+    .WRAPPER .tab h5 {
+        padding: 0 0 0.5rem 1rem;
+    }
+    .WRAPPER .tab ul a {
+        padding: 0.5rem 0 0.5rem 1rem;
+    }
+
+    .WRAPPER .tab ul a:hover {
+        background-color: #f3f3f3;
+    }
+}
+
+
+@media screen and (max-width : 767px){
+
+    .WRAPPER .logo{
+        padding: 0 4rem;
+        text-align: center;
+        background-color: white;
+    }
+
+    .WRAPPER .tab_title_box {
+        display: flex;
+        overflow-x: auto;
+        padding: 0.6rem 1rem;
+        background-color: #f3f3f3;
+    }
+
+    .WRAPPER .tab_title_box .tab_title {
+        position: relative;       
+    }
+
+    .WRAPPER .tab_title_box .tab_title::after {
+        display: block;
+        content: "";
+        width: 0%;
+        height: 1vw;
+        background-color: black;
+        transition: width 0.3s ease-out;
+        position: absolute;
+        bottom: -2.5vw;
+        left: 50%;
+        transform: translateX(-50%);        
+    }    
+
+    .WRAPPER .tab_title_box .tab_title.active::after {
+        display: block;
+        content: "";
+        width: 100%;
+        height: 1vw;
+        background-color: black;
+        transition: width 0.3s ease-out;
+        position: absolute;
+        bottom: -2.5vw;
+        left: 50%;
+        transform: translateX(-50%);        
+    }    
+
+    .WRAPPER .tab_title_box::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    .WRAPPER .tab_title_box .tab_title {
+        white-space: nowrap;
+        padding: 0 0.8rem;
+        cursor: pointer;
+        font-weight: 600;
+    }
+
+    .WRAPPER .tab_box {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0rem;
+        text-align: left;
+        background-color: white;
+        height: 0;
+        opacity: 0;
+    }
+
+    .WRAPPER .tab_box.active {
+        display: block;
+        height: auto;
+        opacity: 1;
+        transition: opacity 0.3s linear
+    }
+    
+    .WRAPPER .tab {
+        width: 100%; 
+        padding: 0.4rem 1rem;
+        border-block-end: #dddddd 0.3vw solid;
+    }
+     
+
+    .WRAPPER .tab ul {
+        display: block;
+        visibility: hidden;
+        overflow: hidden;
+        height: 0;
+        opacity: 0;
+    }
+
+    .WRAPPER .tab ul.active {
+        display: block;
+        visibility: visible;
+        overflow: hidden;
+        height: auto;
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+        margin-top: 0.2rem;        
+    }
+
+    .WRAPPER .tab ul a {
+        padding: 0.25rem 0;
+        margin: 0.5rem auto; 
+    }    
+
+}

@@ -1,0 +1,234 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*回版頭*/
+#gotop {  position:fixed; z-index:5; right:20px; bottom:30px;padding:10px 10px 3px 10px; border-radius:50px; font:12px/30px Verdana; text-align:center; color:#000;  background-color:rgba(255,255,255,0.7); cursor:pointer;
+  -webkit-transition: all 0.3s ease;
+     -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+       -o-transition: all 0.3s ease;
+          transition: all 0.3s ease;}
+#gotop:hover { padding-top:40px; background-color:#fff;} 
+#gotop::before { content: ""; position:absolute; top:7px; left:18px; width: 0; height: 0; border: 4px solid #000; border-color: transparent transparent #000; }
+	@media screen and (max-width:767px){
+		#gotop { right:20px; bottom:20px; }
+	}
+@media screen and (min-width: 736px) {
+        #gotop {display: none !important; opacity:0 !important;}
+}
+
+
+
+/*PC右側黏人精+goTop+回版頭*/
+.fixarea {z-index:99; position:fixed; right:10px; top:20px; /*display: none;*/ width:120px; text-align: center; font-family:"微軟正黑體", "Microsoft JhengHei", Arial; }
+.fixarea .title {}
+.fixarea .fix_box { margin:0 auto; width:85px;}
+.fixarea ul { margin:0; padding:0; list-style:none;}
+.fixarea li { position:relative; margin:0; padding:0; font-size:16px; line-height:20px;}
+.fixarea a { text-decoration:none; color:#fff;}
+.fixarea a:hover{ color:#FF0;}
+.fixarea .fix_main { background-color:#00a8ff;}
+.fixarea .fix_main li { padding:8px 0;}
+.fixarea .fix_main li::after  { content: ""; position:absolute; bottom:0; left:5%; display:block; width:90%; height:1px; border-bottom:1px dotted #fff;}
+.fixarea .fix_main li:last-child::after { display:none;}
+.fixarea .fix_other { padding:5px 0; background-color:#313131;}
+.fixarea .fix_other li { padding:6px 0;}
+
+
+
+/*Phone置頂滑動選單*/
+.m_fixarea{ z-index:999;  position: relative; top:0; top:inherit; left:0; margin:0; padding:0; overflow: scroll; overflow-y: hidden; border:0; width: 100%; height: 40px; box-shadow:0 0 10px rgba(0,0,0,0.3);
+			-webkit-overflow-scrolling: touch; -moz-overflow-scrolling: touch; -ms-overflow-scrolling: touch; -o-overflow-scrolling: touch; overflow-scrolling: touch;
+		    -webkit-animation:fade-in 1.5s; animation:fade-in 1.5s; overflow:hidden;}
+.m_fixarea:after  { content: ""; display:block; position:absolute; top:0; left:0; width:100%; height:100%; background-color:#f2f2f2;
+    background-color: rgba(255,255,255,0.95);
+    -webkit-transition: background-color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
+    transition: background-color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
+    -webkit-transition-property: background-color, -webkit-backdrop-filter;
+    transition-property: background-color, -webkit-backdrop-filter;
+    transition-property: background-color, backdrop-filter;
+    transition-property: background-color, backdrop-filter, -webkit-backdrop-filter;}		
+	
+.m_fixarea ul { margin:0;  padding:0; list-style: none;}
+.m_fixarea ul li{ width:80px;}
+.m_fixarea ul li:after  { content: ""; position: absolute;  top:12px; /* right:0px; */display:block; width:1px; height:18px; background-color:#f2f2f2;!important}
+.m_fixarea ul li a { display:block; text-decoration:none;}
+.m_fixarea ul li .txt{ display:block; padding:0; width: 100%; height:50px; text-align:center; font-size:16px; line-height:40px;  color:#000; font:bold; font-family:"Century Gothic", "微軟正黑體", sans-serif;  background-size: 100% 100%; }
+.m_fixarea ul li .txt:hover{color:#F00;}
+.m_fixarea .fixbox { margin-left:80px; overflow:hidden;}
+.m_fixarea .fixbox_toptext { z-index:1000; position: absolute; top:0; top:inherit; border:0; width:80px; height: 40px; color:#e7ab01; text-align:center; font-size:16px; line-height:40px; font:bold; font-family:"Century Gothic", "微軟正黑體", sans-serif; letter-spacing:-1px;  color:#F00; }
+.m_fixarea .fixbox_toptext:after  { content: ""; position: absolute;  top:11px;  right:0px; display:block; width:1px; height:18px; background-color:#000;!important}
+.m_fixarea .fixbox_toptext:before { content: ""; display: block; position: absolute; top:0px; right:-16px; width:16px; height:38px;  /*background-image: repeating-linear-gradient(90deg, rgba(0,0,0,0.7) -2%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 120%);*/}
+
+
+
+/*手機登記按鈕20190506*/
+
+.book_box {  position:relative;}
+.book_box a { display:block; width:100%; height:100%;}
+.book_ { }
+.book_ .count { margin: 0;padding: 0;  color:#fff; text-align:center; font: bold 3vw/5vw "Century Gothic", Arial, "Microsoft JhengHei";}	
+
+/*1品*/		
+.book_01 { position:absolute;width:68.50%;  height: 100%;  top: 0vw;left:0vw; }
+.book_01 .count { position: absolute;    top: 86.5%; left: 62%;}
+.post { position:absolute; width:32.50%;  height: 32%;  top: 21%; left:67.4%;}
+.list { position:absolute; width:32.50%;  height: 32%;  top: 53%;left:67.4%; }
+
+/*2品*/	
+.book_box2 .book_01 { position:absolute;width:37.50%;  height: 100%;  top: 0vw;left:0vw; }
+.book_box2 .book_01 .count { position: absolute; top: 70%; left:35%;}
+.book_box2 .book_02 { position:absolute;width:34.38%;  height: 100%;  top:0;left:35%;  }
+.book_box2 .book_02 .count {  position: absolute; top: 70%; left:32%;}
+.book_box2 .post { position:absolute; width:28.13%;  height: 40%;  top: 10%; left:71.4%;}
+.book_box2 .list { position:absolute; width:28.13%;  height: 40%;  top: 50%;left:71.4%; }
+
+/*3品*/	
+.book_box3 .book_01 { position:absolute;width:34.50%;  height: 75%;  top: 0vw;left:0vw; }
+.book_box3 .book_01 .count { position: absolute; top: 88.5%; left:36%;}
+.book_box3 .book_02 { position:absolute;width:31.0%;  height: 75%;  top:0;left:35%;  }
+.book_box3 .book_02 .count {  position: absolute; top: 88.5%; left:27%;}
+.book_box3 .book_03 { position:absolute;width:34.50%;  height: 75%;  top:0;left:66%;  }
+.book_box3 .book_03 .count {  position: absolute; top: 88.5%; left:26%;}
+.book_box3 .post { position:absolute; width:50%;  height: 25%;  top: 75%; left:0%;}
+.book_box3 .list { position:absolute; width:50%;  height: 25%;  top: 75%; left:50%; }
+            
+
+	
+/*黏人快速鍵(白色款)*/
+.fixed_Area {z-index:999; position:fixed; top:20px; right:0px; width:100px; font-weight:800; font-size:16px; line-height:48px; font-family:Century Gothic, "微軟正黑體",Helvetica; text-align:center;
+			-webkit-transform: rotate3d(0,0,0,0deg) translate3d(0,0,0); transform: rotate3d(0,0,0,0deg) translate3d(0,0,0); -webkit-transform-origin:top right; transform-origin:top right;
+			  -webkit-transition: all 0.2s ease;
+				 -moz-transition: all 0.2s ease;
+				  -ms-transition: all 0.2s ease;
+				   -o-transition: all 0.2s ease;
+					  transition: all 0.2s ease;}
+.fixed_Area a { display:block; text-decoration: none; color: #000;}
+.fixed_Area img {-webkit-transition: all 0.4s ease;-moz-transition: all 0.4s ease;-ms-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease;}
+.fixed_Area .box ul { margin:0; padding:0; list-style:none;}
+.fixed_Area .box li { margin:0 0 1px 0; padding:0; height:48px; background-color:rgba(255,255,255,0.6);}
+.fixed_Area .box li a { letter-spacing:-1px;height:48px; overflow:hidden;}
+.fixed_Area .box li a:hover { background-color:rgba(255,255,255,1);}
+.fixed_Area .box li.cate-hover { background-color:rgba(255,255,255,1);}
+.fixed_Area .box h2 { margin:0; padding:0;}
+	/*快速導覽*/
+	.fixed_Area h3 { position: absolute; top:100px; right:-50px; margin:0; padding:35px 0 0 0; border-radius:10px; width:48px; height:82px; font-size: 16px; line-height:30px; writing-mode: tb-lr; writing-mode: vertical-lr; -webkit-writing-mode: vertical-lr; background-color:rgba(255,255,255,0.6); text-align:left; cursor:pointer;
+			-webkit-transform-origin:top left; transform-origin:top left;
+			  -webkit-transition: all 0.2s ease;
+				 -moz-transition: all 0.2s ease;
+				  -ms-transition: all 0.2s ease;
+				   -o-transition: all 0.2s ease;
+					  transition: all 0.2s ease;}
+	.fixed_Area h3 i { position: absolute; top:0; right:0; display:block; width:50px; height:50px; cursor:pointer;}
+
+	.fixed_Area h3 i:before { content: ""; position:absolute; top:41%; left:37%; display:block; border:1px solid #000; border-width:0 1px 1px 0; width:15%; height:15%; -webkit-transform:translate(-50%,-50%) rotate(135deg); transform:translate(-50%,-50%) rotate(135deg); -webkit-transition: all 0.3s ease; transition: all 0.3s ease;}
+			/*黑色款*/
+			.fixed_Area.fixed_Area-dark a { color: #fff;}
+			.fixed_Area.fixed_Area-dark .box li { background-color:rgba(0,0,0,0.5);}
+			.fixed_Area.fixed_Area-dark .box li a:hover { background-color:rgba(0,0,0,1);}
+			.fixed_Area.fixed_Area-dark .box li.cate-hover { background-color:rgba(0,0,0,1);}
+            .fixed_Area.fixed_Area-dark h3 {background-color:rgba(0,0,0,0.5);color: #fff; }
+            .fixed_Area.fixed_Area-dark h3  i:before { border-color:#fff;}
+
+
+
+			/*收合黏人精*/
+			.fixed_Area.fixed_Area_hide { -webkit-transform: rotate3d(0,0,0,0deg) translate3d(150px,0,0); transform: rotate3d(0,0,0,0deg) translate3d(150px,0,0); }
+			.fixed_Area.fixed_Area_hide h3 { -webkit-transform: rotate3d(0,0,0,0deg) translate3d(-185px,0,0); transform: rotate3d(0,0,0,0deg) translate3d(-185px,0,0); 
+											 -webkit-transition-delay:0.2s; transition-delay:0.2s;}
+
+
+
+
+
+
+
+
+
+/*光*/
+.righttoleft{-webkit-animation-duration: 6s;  animation-duration: 6s;  -webkit-animation-name: righttoleft;  animation-name:righttoleft;  -webkit-animation-iteration-count: infinite;    animation-iteration-count:infinite;  animation-timing-function: ease-in;}
+@-webkit-keyframes righttoleft {
+	 0% { transform: translate(0,0px); opacity:0  } 
+	 25% { transform: translate(0,0px); opacity:0  } 
+	 50%{opacity:1}
+	 75%{ transform: translate(230px,0);opacity:0}
+	 100%{ transform: translate(230px,0);opacity:0}
+}
+@keyframes righttoleft { 
+	 0% { transform: translate(0,0px); opacity:0  } 
+	 25% { transform: translate(0,0px); opacity:0  } 
+	 50%{opacity:1}
+	 75%{ transform: translate(230px,0);opacity:0}
+	 100%{ transform: translate(230px,0);opacity:0}
+}
+
+/*光*/
+.lefttoright{-webkit-animation-duration: 6s;  animation-duration: 6s;  -webkit-animation-name: lefttoright;  animation-name:lefttoright;  -webkit-animation-iteration-count: infinite;    animation-iteration-count:infinite;  animation-timing-function: ease-in;}
+@-webkit-keyframes righttoleft {
+	 0% { transform: translate(230px,0); opacity:0  } 
+	 25% { transform: translate(230px,0); opacity:0  } 
+	 50%{opacity:1}
+	 75%{ transform: translate(0,0px);opacity:0}
+	 100%{ transform: translate(0,0px);opacity:0}
+}
+@keyframes lefttoright { 
+	 0% { transform: translate(230px,0); opacity:0  } 
+	 25% { transform: translate(230px,0); opacity:0  } 
+	 50%{opacity:1}
+	 75%{ transform: translate(0,0px);opacity:0}
+	 100%{ transform: translate(0,0px);opacity:0}
+}
+
+
+.uptodown3 {-webkit-animation-duration: 5s;  animation-duration: 5s;  -webkit-animation-name: uptodown3;  animation-name:uptodown3;  -webkit-animation-iteration-count: infinite;    animation-iteration-count:infinite; -webkit-animation-direction: alternate;animation-direction: alternate;   animation-timing-function: ease-in-out;}
+@-webkit-keyframes uptodown3 { 
+0% { transform: translate(0,100px);  } 
+50% { transform: translate(0,400px);  } 
+60% { transform: translate(0,410px);  } 
+80%{ transform: translate(0,950px);}
+100%{ transform: translate(0,950px);}
+
+
+}
+@keyframes uptodown3 { 
+0% { transform: translate(0,100px);  } 
+50% { transform: translate(0,400px);  } 
+60% { transform: translate(0,410px);  } 
+80%{ transform: translate(0,950px);}
+100%{ transform: translate(0,950px);}
+
+}
+
+
+
+/*閃亮*/		  
+.shine { -webkit-animation:shine 5s linear infinite alternate; animation:shine 5s linear infinite alternate ;}
+	@-webkit-keyframes shine {
+	  0% { filter:brightness(100%) contrast(100%); }
+	  49% { filter:brightness(100%) contrast(100%); }
+	  50% { filter:brightness(120%) contrast(100%);  }
+	  51% { filter:brightness(100%) contrast(100%); }
+	  80% { filter:brightness(110%) contrast(110%);  }
+	  90% { filter:brightness(100%) contrast(100%); }
+	  91% { filter:brightness(110%) contrast(105%);  }
+	  92% { filter:brightness(100%) contrast(100%); }
+	  100% { filter:brightness(105%) contrast(100%);  }
+	}
+	@keyframes shine {
+	  0% { filter:brightness(100%) contrast(100%); }
+	  49% { filter:brightness(100%) contrast(100%); }
+	  50% { filter:brightness(120%) contrast(100%);  }
+	  51% { filter:brightness(100%) contrast(100%); }
+	  80% { filter:brightness(110%) contrast(110%);  }
+	  90% { filter:brightness(100%) contrast(100%); }
+	  91% { filter:brightness(110%) contrast(105%);  }
+	  92% { filter:brightness(100%) contrast(100%); }
+	  100% { filter:brightness(105%) contrast(100%);  }
+	}
+
+
+
+
+
+
