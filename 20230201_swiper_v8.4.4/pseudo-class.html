@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./images/pseudo-class.css" />
+    </head>
+    <body>
+        <script>
+            //  說明
+            /*
+                前情提要
+                CSS 選擇器
+                    種類有id class tag attr 偽類 偽元素
+                    組合有 子代 sibling 同時
+                    
+                ::偽元素 : 在指向的DOM前/後插入偽元素
+                    ::before
+                    ::after    
+                
+                :偽類
+                    :hover
+                    :active
+                    :nth
+                        :nth(an+b)
+                    :has
+                    :not
+             */
+        </script>
+
+        <div class="Wrapper">
+            <!-- hover active -->
+            <section class="hover-section" data-deco-txt="hover">
+                <div class="innerWrapper">
+                    <div class="btn">BTN_1</div>
+                    <div class="btn">BTN_2</div>
+                    <div class="btn">BTN_3</div>
+                    <div class="btn">BTN_4</div>
+                    <div class="btn">BTN_5</div>
+                </div>
+            </section>
+            <!-- nth -->
+            <section class="nth-section" data-deco-txt="nth">
+                <div class="innerWrapper">
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                </div>
+            </section>
+
+            <!-- odd/even -->
+            <section class="oddeven-section" data-deco-txt="odd">
+                <div class="innerWrapper">
+                    <div class="btn">BTN_1</div>
+                    <div class="btn">BTN_1</div>
+                    <div class="btn">BTN_2</div>
+                    <div class="btn">BTN_2</div>
+                    <div class="btn">BTN_3</div>
+                    <div class="btn">BTN_3</div>
+                    <div class="btn">BTN_4</div>
+                    <div class="btn">BTN_4</div>
+                    <div class="btn">BTN_5</div>
+                    <div class="btn">BTN_5</div>
+                </div>
+            </section>
+
+            <!-- has -->
+            <section class="has-section" data-deco-txt="has">
+                <div class="innerWrapper">
+                    <div class="btn" data-btn="coupoun">coupoun</div>
+                    <div class="btn" data-btn="decri">decri</div>
+                </div>
+                <dialog data-dialog="coupoun">
+                    <div class="dialogWrapper">
+                        <h3>標題標題標題 <span class="close">-</span></h3>
+                        <div class="coupounWrapper">
+                            <div class="coupoun"></div>
+                            <div class="coupoun"></div>
+                            <div class="coupoun"></div>
+                            <div class="coupoun"></div>
+                            <div class="coupoun"></div>
+                            <div class="coupoun"></div>
+                            <div class="coupoun"></div>
+                            <div class="coupoun"></div>
+                            <div class="coupoun"></div>
+                        </div>
+                        <div class="bottom-close">close</div>
+                    </div>
+                </dialog>
+                <dialog data-dialog="decri">
+                    <div class="dialogWrapper">
+                        <h3>標題標題標題 <span class="close">-</span></h3>
+                        <div class="descri">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Dolore rem, quia sequi nemo suscipit nisi
+                            maxime dolorem explicabo culpa debitis voluptatum
+                            incidunt minima iusto facere ducimus! Temporibus
+                            nostrum sapiente deleniti. Lorem ipsum dolor sit
+                            amet consectetur adipisicing elit. Dolore rem, quia
+                            sequi nemo suscipit nisi maxime dolorem explicabo
+                            culpa debitis voluptatum incidunt minima iusto
+                            facere ducimus! Temporibus nostrum sapiente
+                            deleniti. Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Dolore rem, quia sequi nemo
+                            suscipit nisi maxime dolorem explicabo culpa debitis
+                            voluptatum incidunt minima iusto facere ducimus!
+                            Temporibus nostrum sapiente deleniti.
+                        </div>
+                        <div class="bottom-close">close</div>
+                    </div>
+                </dialog>
+            </section>
+
+            <!-- not -->
+            <section class="not-section" data-deco-txt="not">
+                <div class="innerWrapper">
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                </div>
+            </section>
+        </div>
+    </body>
+
+    <script src="./images/main.js"></script>
+</html>

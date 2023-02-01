@@ -1,0 +1,119 @@
+html {
+    background: #000;
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Area {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+.Area1220 {
+    width: 1220px;
+}
+
+@media screen and (max-width : 768px) {
+    .Area1220 {
+        width: 100%;
+    }
+}
+
+
+
+/* poster */
+.Area_swiper {
+    height: 100vh;
+}
+
+.Area_swiper .swiper-poster {
+    height: 100vh;
+}
+
+.poster-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10vh 0;
+}
+
+.poster-wrapper .poster {
+    transition: all 0.5s linear;
+    opacity: 0;
+    transform: translateX(-50px);
+    filter: drop-shadow(0px 55px 40px rgba(0, 0, 0, 0.75));
+}
+
+.swiper-slide-active.poster-wrapper .poster {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.poster-wrapper[data-poster]::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+    filter: blur(25px) brightness(0.5) opacity(0.7);
+    background-size: 100vw;
+}
+
+.poster-wrapper[data-poster*="Parasite"]::before {
+    background: url('https://i.pinimg.com/564x/30/a2/cb/30a2cbc7830110cd118272af60923148.jpg') no-repeat center;
+    background-size: 100vw;
+}
+
+.poster-wrapper[data-poster*="MoonLight"]::before {
+    background: url('https://i.pinimg.com/564x/85/5c/1e/855c1e93df0b4e7ed12d50fd9ed1c91c.jpg') no-repeat center;
+    background-size: 100vw;
+}
+
+.poster-wrapper[data-poster*="Lighthouse"]::before {
+    background: url('https://i.pinimg.com/564x/9d/e9/af/9de9af2dc31a9d579c859e110a8a7d40.jpg') no-repeat center;
+    background-size: 100vw;
+}
+
+.poster-wrapper[data-poster*="jocker"]::before {
+    background: url('https://i.pinimg.com/564x/99/f8/70/99f8702093bd74454c4636a33f558c4a.jpg') no-repeat center;
+    background-size: 100vw;
+}
+
+
+.poster-info {
+    width: 30vw;
+    background: rgba(255, 255, 255, 0.7);
+    color: #484848;
+    padding: 3rem 3rem 5rem 3rem;
+}
+
+.poster-info .movie-title {
+    letter-spacing: 0.075rem;
+    text-transform: uppercase;
+}
+
+.btn-go {
+    transition: all 0.25s linear;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    color: #fff;
+}
+
+.btn-go:hover {
+    transition: all 0.25s linear;
+    filter: brightness(1.25);
+}
+
+.btn-go span {
+    background: #484848;
+    padding: 0.5rem 1rem;
+}
