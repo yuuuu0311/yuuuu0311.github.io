@@ -1,0 +1,43 @@
+.footer
+    background: var(--secondary-gray)
+
+    &-backdrop
+        grid-column: 1/-1
+        grid-row: 1/-1
+
+    &-logo-wrap
+        grid-column: 1/-1
+        grid-row: 1/-1
+        padding-top: 12.5%
+
+    span
+        display: flex
+        white-space: nowrap
+        &:not(:last-of-type)
+            &::after
+                margin-left: 0.5rem
+                content: "/"
+
+@media screen and (max-width: 768px)
+    .footer
+        background: var(--secondary-gray)
+
+        &-backdrop
+            grid-column: 1/-1
+            grid-row: 1/-1
+
+        &-logo-wrap
+            grid-column: 1/-1
+            grid-row: 1/-1
+            padding-top: 45%
+
+        span
+            display: flex
+            white-space: nowrap
+            &:not(:last-of-type)
+                &::after
+                    margin-left: 0.5rem
+                    content: "/"
+    
+.flex-wrap
+    flex-wrap: wrap
