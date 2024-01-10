@@ -1,12 +1,43 @@
-## Welcome to GitHub Pages
+## 製作 RWD Layout
 
-You can use the [editor on GitHub](https://github.com/yuuuu0311/yuuuu0311.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+[作業 Guied line](https://drive.google.com/file/d/1-Vkim3go6l2Q25aKGeG1kyebl7DiENNP/view)  
+[完成作業](https://yuuuu0311.github.io/AppworkSchool/week-1/Assignment-1/)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### 重點
+
+1. git
+2. media query
+3. flex
+
+### 筆記
+
+#### git commad
+
+```zsh
+
+- git clone : 克隆 remote 專案到本地
+- git pull : 從 remote 拉取
+- git push : 推送到 remote
+
+- git add : 將修改加到暫存區
+- git commit -m "commit message" : 提交版本
+
+```
+
+#### sass 預處理 RWD
+
+```scss
+<!-- 製作一個 mixin -->
+@mixin pad
+  @media screen and (min-width: 500px) and (max-width: 799px)
+    @content
+
+<!-- 使用 -->
+@include pad
+    blah blah blah
+```
 
 ### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
 Syntax highlighted code block
@@ -27,13 +58,3 @@ Syntax highlighted code block
 
 [Link](url) and ![Image](src)
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/yuuuu0311/yuuuu0311.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
