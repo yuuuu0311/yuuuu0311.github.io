@@ -16,6 +16,12 @@ img {
   --nav-height: 4.75rem;
 }
 
+header {
+  position: sticky;
+  z-index: 1001;
+  top: 0;
+}
+
 .nav-container {
   width: 100%;
   height: var(--nav-height);
@@ -69,8 +75,8 @@ img {
     left: 0;
     background: var(--nav-bg);
     padding-block-end: 1rem;
-    padding-inline: 1rem;
-    z-index: -1001;
+    padding-inline: 1.5rem;
+    z-index: -1;
     transition: all 0.25s ease-in-out;
   }
   .nav-group .link.active {
@@ -88,7 +94,7 @@ img {
     background: var(--nav-bg);
     padding-block-end: 1rem;
     padding-inline: 1rem;
-    z-index: -1001;
+    z-index: -1;
     transition: all 0.25s ease-in-out;
   }
   .nav-group .link.active {
