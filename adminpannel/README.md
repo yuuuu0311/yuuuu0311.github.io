@@ -1,3 +1,0 @@
-公司內部系統UI設計，嘗試練習手刻RWD，目前部分layout仍然使用Bootstrap
-規劃為desktop first
-Break point分做手機板及電腦螢幕版
