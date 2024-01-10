@@ -1,11 +1,8 @@
-@import ../_mixin
-
-:root
-    --welcome-bg: blue
+@import ../utilities/_mixin
 
 .welcom
     &-section
-        background: blue
+        background: lightblue
     &-container
         width: min(100%, 1200px)
         display: flex
@@ -16,3 +13,9 @@
         padding-block: 6rem
         padding-inline: 2rem
         margin-inline: auto
+
+        @include pad
+            font-size: 3rem
+
+        @include mobile
+            font-size: 2rem

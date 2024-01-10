@@ -157,12 +157,8 @@ img {
   }
 }
 
-:root {
-  --welcome-bg: blue;
-}
-
 .welcom-section {
-  background: blue;
+  background: lightblue;
 }
 .welcom-container {
   width: min(100%, 1200px);
@@ -175,16 +171,35 @@ img {
   padding-inline: 2rem;
   margin-inline: auto;
 }
+@media screen and (min-width: 500px) and (max-width: 799px) {
+  .welcom-container {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 499px) {
+  .welcom-container {
+    font-size: 2rem;
+  }
+}
 
 .content-title {
   font-size: 3rem;
   margin-block-end: 3rem;
   text-align: center;
 }
+@media screen and (min-width: 500px) and (max-width: 799px) {
+  .content-title {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 499px) {
+  .content-title {
+    font-size: 1.5rem;
+  }
+}
 .content-container {
   width: min(100%, 1200px);
   margin-inline: auto;
-  padding-block: 5rem;
   padding-inline: 2.5%;
 }
 .content-group {
@@ -204,4 +219,25 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.button-section {
+  width: min(100%, 1200px);
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+}
+.button-item {
+  background: lightblue;
+  appearance: none;
+  border: none;
+  padding-block: 1rem;
+  padding-inline: 2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-block: 5rem;
 }

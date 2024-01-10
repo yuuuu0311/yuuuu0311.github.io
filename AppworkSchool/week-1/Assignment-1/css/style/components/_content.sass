@@ -1,4 +1,4 @@
-@import ../_mixin
+@import ../utilities/_mixin
 
 :root
 
@@ -8,10 +8,15 @@
         margin-block-end: 3rem
         text-align: center
 
+        @include pad
+            font-size: 2rem
+
+        @include mobile
+            font-size: 1.5rem
+
     &-container
         width: min(100%, 1200px)
         margin-inline: auto
-        padding-block: 5rem
         padding-inline: 2.5%
 
     &-group
