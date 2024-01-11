@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+section {
+  display: block;
+  margin-inline: auto;
+  width: min(100%, 1200px);
+}
+
+.tool-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 0.5fr));
+  gap: 1rem;
+  list-style: none;
+  margin-inline: 1rem;
+}
+.tool-card {
+  border: 1px solid #dadce0;
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 8px 32px 25px;
+}
+.tool-card-head {
+  max-width: 50%;
+  margin-block: 0.25rem 0;
+  margin-inline: auto;
+}
+.tool-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+  font-size: 0.75rem;
+}
+.tool-card-body--title {
+  font-weight: bolder;
+}

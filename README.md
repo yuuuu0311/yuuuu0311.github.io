@@ -37,3 +37,26 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+
+## Remote 學習資源
+
+### 1/10 - 1/16
+
+-   [ ] [Introduction to the Terminal](https://teamtreehouse.com/library/introduction-to-the-terminal)
+-   [x] [Introduction to Git](https://teamtreehouse.com/library/introduction-to-git)
+-   [ ] (optional) [Git and GitHub for Beginners - Crash Course](https://www.youtube.com/watch?v=RGOj5yH7evk&ab_channel=freeCodeCamp.org)
+-   [ ] (optional) [Git Branches and Merging](https://teamtreehouse.com/library/git-branches-and-merging)
+-   [x] [Hosting Website with GitHub Page](https://pages.github.com/)
+-   [x] [HTML Basics](https://teamtreehouse.com/library/html-basics-2)
+-   [x] [CSS Basics](https://teamtreehouse.com/library/css-basics-5)
+-   [x] [CSS Layout](https://teamtreehouse.com/library/css-basics-5)
+-   [x] [Mobile-First CSS Layout](https://teamtreehouse.com/library/mobilefirst-css-layout)
+-   [x] [Responsive Layouts](https://teamtreehouse.com/library/responsive-layouts)
+-   [x] [CSS Flexbox Layout](https://teamtreehouse.com/library/css-flexbox-layout)
+-   [ ] [Debugging CSS with Chrome DevTools](https://teamtreehouse.com/library/debugging-css-with-chrome-devtools)
+
+#### 作業
+
+-   [ ] [作業 Guied line](https://drive.google.com/file/d/1-Vkim3go6l2Q25aKGeG1kyebl7DiENNP/view)
+-   [ ] [問券連結](https://docs.google.com/forms/d/e/1FAIpQLSf2aBrtQ7Qk4TRlbUVUJYUUmuRSw96wzmRBDDf2oEgFa73aSA/viewform)
+-   [x] [完成作業](https://yuuuu0311.github.io/AppworkSchool/week-1/Assignment-1/)
