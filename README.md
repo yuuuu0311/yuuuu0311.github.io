@@ -57,6 +57,59 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 
 #### 作業
 
--   [ ] [作業 Guied line](https://drive.google.com/file/d/1-Vkim3go6l2Q25aKGeG1kyebl7DiENNP/view)
--   [ ] [問券連結](https://docs.google.com/forms/d/e/1FAIpQLSf2aBrtQ7Qk4TRlbUVUJYUUmuRSw96wzmRBDDf2oEgFa73aSA/viewform)
--   [x] [完成作業](https://yuuuu0311.github.io/AppworkSchool/week-1/Assignment-1/)
+##### [Guied line](https://drive.google.com/file/d/1-Vkim3go6l2Q25aKGeG1kyebl7DiENNP/view)
+
+-   [x] [繳交問券](https://docs.google.com/forms/d/e/1FAIpQLSf2aBrtQ7Qk4TRlbUVUJYUUmuRSw96wzmRBDDf2oEgFa73aSA/viewform)
+-   [x] [繳交作業](https://yuuuu0311.github.io/AppworkSchool/week-1/Assignment-1/)
+
+---
+
+### 1/17 - 1/23
+
+-   [ ] JavaScript Basics
+-   [ ] JavaScript Functions
+-   [ ] JavaScript Loops
+-   [ ] JavaScript Arrays
+-   [ ] JavaScript Objects
+-   [ ] JavaScript and the DOM
+-   [ ] Interacting with the DOM
+-   [ ] Debugging JavaScript in the Browser
+
+#### 作業
+
+##### [Guied line](https://drive.google.com/file/d/10k6Oqin70dzYDazosfGC_Bd-kxmNFUNu/view)
+
+-   [ ] [繳交問券](https://docs.google.com/forms/d/e/1FAIpQLSf2aBrtQ7Qk4TRlbUVUJYUUmuRSw96wzmRBDDf2oEgFa73aSA/viewform)
+-   [ ] [繳交作業](https://yuuuu0311.github.io/AppworkSchool/week-1/Assignment-1/)
+
+---
+
+### 1/24 - 1/30
+
+-   [ ] Array Iteration Methods
+-   [ ] Callback Functions
+-   [ ] Asynchronous Programming with JavaScript
+-   [ ] HTTP Basics
+-   [ ] Working with the Fetch API
+-   [ ] Node.js Basics
+-   [ ] npm Basics
+-   [ ] Express Basics
+
+---
+
+### 1/31 - 2/6
+
+-   [ ] Using Create React App
+-   [ ] Deploying a React App
+-   [ ] React Basics
+-   [ ] React Components
+-   [ ] React Hooks
+
+---
+
+### Optional
+
+-   [ ] Learn React Javascript - Tracks
+-   [ ] Website Optimization
+-   [ ] CSS Grid Layout
+-   [ ] Getting Started with TypeScript
