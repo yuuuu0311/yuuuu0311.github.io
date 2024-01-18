@@ -66,10 +66,10 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 
 ### 1/17 - 1/23
 
--   [ ] JavaScript Basics
--   [ ] JavaScript Functions
--   [ ] JavaScript Loops
--   [ ] JavaScript Arrays
+-   [x] JavaScript Basics
+-   [x] JavaScript Functions
+-   [x] JavaScript Loops
+-   [x] JavaScript Arrays
 -   [ ] JavaScript Objects
 -   [ ] JavaScript and the DOM
 -   [ ] Interacting with the DOM
