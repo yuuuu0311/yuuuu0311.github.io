@@ -41,3 +41,34 @@ Array.includes(ele); // return wether the element is in the Array or not
 Array.indexOf(ele); // return the index of the element in the Array
 Array.join(", "); // return a String combined all the element in the Array and linked with ", "
 ```
+
+### Object
+
+##### 迴圈
+
+```javascript
+for (const key in object) {
+    console.log(object[key]);
+}
+```
+
+### 小技巧
+
+1. 物件也可展開，兩物件展開後合併可參考上方陣列的做法
+
+```javascript
+(...Object) // 將陣列展開
+```
+
+2.  Object.keys(); 和 Object.values(); 來快速得到物件的 key 和 value
+
+```javascript
+Object.keys(); //  returns an array containing the keys
+Object.values(); //  returns an array of a given object's property values
+
+const personProps = Object.keys(person);
+console.log(personProps); // > (4) ["name", "role", "skills", "isTeacher"]
+
+// 看物件長度
+console.log(Object.keys(person).length); // 4
+```
