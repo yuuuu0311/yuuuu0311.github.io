@@ -1,0 +1,33 @@
+@import ../utilities/_mixin
+
+.welcom
+    &-section
+        background: lightblue
+    &-container
+        width: min(100%, 1200px)
+        display: grid
+        grid-template-columns: 1fr
+        grid-template-rows: 1fr
+        place-items: center
+        font-size: 5rem
+        font-weight: bold
+        padding-block: 6rem
+        padding-inline: 2rem
+        margin-inline: auto
+
+    &-hero, &-sub
+        grid-column: 1/-1
+        grid-row: 1/-1
+        transition: opacity 0.5s ease-in-out
+        user-select: none
+        opacity: 0
+        &.active
+            opacity: 1
+    &-hero
+        z-index: 10
+
+        @include pad
+            font-size: 3rem
+
+        @include mobile
+            font-size: 2rem

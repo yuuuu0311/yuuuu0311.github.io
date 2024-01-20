@@ -3,6 +3,7 @@
 ### 重點
 
 1. Array
+2. Object
 
 ### 筆記
 
@@ -71,4 +72,25 @@ console.log(personProps); // > (4) ["name", "role", "skills", "isTeacher"]
 
 // 看物件長度
 console.log(Object.keys(person).length); // 4
+```
+
+3. switch
+
+```javascript
+判斷傳入的參數適合符合 case 然後執行相對應的動作，可更簡潔地完成多種條件判斷
+
+    // Assignment-2
+    switch (value[2]) {
+        case "+":
+            return value[0] + value[1];
+        case "-":
+            return value[0] - value[1];
+        case "*":
+            return value[0] * value[1];
+        case "/":
+            return value[0] / value[1];
+        default:
+            return `Not supported`;
+    }
+
 ```

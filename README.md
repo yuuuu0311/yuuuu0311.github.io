@@ -70,7 +70,7 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 -   [x] JavaScript Functions
 -   [x] JavaScript Loops
 -   [x] JavaScript Arrays
--   [ ] JavaScript Objects
+-   [x] JavaScript Objects
 -   [ ] JavaScript and the DOM
 -   [ ] Interacting with the DOM
 -   [ ] Debugging JavaScript in the Browser
