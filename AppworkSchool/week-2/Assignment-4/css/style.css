@@ -233,6 +233,7 @@ header {
   flex-wrap: wrap;
   gap: 1rem;
   list-style: none;
+  margin-bottom: 1rem;
 }
 .content-group-item {
   background: #454545;
@@ -245,6 +246,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.content-group.hidden {
+  display: none;
 }
 
 .button-section {
