@@ -33,6 +33,7 @@ header {
   padding-inline: 3.5rem;
   position: relative;
 }
+
 @media screen and (min-width: 500px) and (max-width: 799px) {
   .nav-container {
     font-size: 1.5rem;
@@ -40,6 +41,7 @@ header {
     padding-inline: 1.5rem;
   }
 }
+
 @media screen and (max-width: 499px) {
   .nav-container {
     font-size: 1.25rem;
@@ -47,24 +49,29 @@ header {
     padding-inline: 1rem;
   }
 }
+
 .nav-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100%;
 }
+
 .nav-logo {
   white-space: nowrap;
 }
+
 .nav-group {
   display: flex;
   align-items: center;
 }
+
 .nav-group .link {
   display: flex;
   list-style: none;
   gap: 2.5rem;
 }
+
 @media screen and (min-width: 500px) and (max-width: 799px) {
   .nav-group .link {
     flex-direction: column;
@@ -79,10 +86,12 @@ header {
     z-index: -1;
     transition: all 0.25s ease-in-out;
   }
+
   .nav-group .link.active {
     transform: translateY(100%);
   }
 }
+
 @media screen and (max-width: 499px) {
   .nav-group .link {
     flex-direction: column;
@@ -97,13 +106,16 @@ header {
     z-index: -1;
     transition: all 0.25s ease-in-out;
   }
+
   .nav-group .link.active {
     transform: translateY(100%);
   }
 }
+
 .nav-group .hamberger {
   display: none;
 }
+
 @media screen and (min-width: 500px) and (max-width: 799px) {
   .nav-group .hamberger {
     display: flex;
@@ -113,17 +125,21 @@ header {
     justify-content: space-around;
     position: relative;
   }
+
   .nav-group .hamberger.active span:nth-of-type(1) {
     position: absolute;
     transform: rotate(45deg);
   }
+
   .nav-group .hamberger.active span:nth-of-type(2) {
     opacity: 0;
   }
+
   .nav-group .hamberger.active span:nth-of-type(3) {
     position: absolute;
     transform: rotate(-45deg);
   }
+
   .nav-group .hamberger span {
     display: block;
     width: 1.5rem;
@@ -133,6 +149,7 @@ header {
     transition: all 0.25s ease-in-out;
   }
 }
+
 @media screen and (max-width: 499px) {
   .nav-group .hamberger {
     display: flex;
@@ -142,17 +159,21 @@ header {
     justify-content: space-around;
     position: relative;
   }
+
   .nav-group .hamberger.active span:nth-of-type(1) {
     position: absolute;
     transform: rotate(45deg);
   }
+
   .nav-group .hamberger.active span:nth-of-type(2) {
     opacity: 0;
   }
+
   .nav-group .hamberger.active span:nth-of-type(3) {
     position: absolute;
     transform: rotate(-45deg);
   }
+
   .nav-group .hamberger span {
     display: block;
     width: 1.5rem;
@@ -166,6 +187,7 @@ header {
 .welcom-section {
   background: lightblue;
 }
+
 .welcom-container {
   width: min(100%, 1200px);
   display: flex;
@@ -177,11 +199,13 @@ header {
   padding-inline: 2rem;
   margin-inline: auto;
 }
+
 @media screen and (min-width: 500px) and (max-width: 799px) {
   .welcom-container {
     font-size: 3rem;
   }
 }
+
 @media screen and (max-width: 499px) {
   .welcom-container {
     font-size: 2rem;
@@ -193,27 +217,32 @@ header {
   margin-block-end: 3rem;
   text-align: center;
 }
+
 @media screen and (min-width: 500px) and (max-width: 799px) {
   .content-title {
     font-size: 2rem;
   }
 }
+
 @media screen and (max-width: 499px) {
   .content-title {
     font-size: 1.5rem;
   }
 }
+
 .content-container {
   width: min(100%, 1200px);
   margin-inline: auto;
   padding-inline: 2.5%;
 }
+
 .content-group {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   list-style: none;
 }
+
 .content-group-item {
   background: #454545;
   color: white;
@@ -233,6 +262,7 @@ header {
   display: flex;
   justify-content: center;
 }
+
 .button-item {
   background: lightblue;
   appearance: none;

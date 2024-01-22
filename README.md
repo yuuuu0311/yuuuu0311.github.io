@@ -42,6 +42,8 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 
 ### 1/10 - 1/16
 
+#### 資源
+
 -   [ ] [Introduction to the Terminal](https://teamtreehouse.com/library/introduction-to-the-terminal)
 -   [x] [Introduction to Git](https://teamtreehouse.com/library/introduction-to-git)
 -   [ ] (optional) [Git and GitHub for Beginners - Crash Course](https://www.youtube.com/watch?v=RGOj5yH7evk&ab_channel=freeCodeCamp.org)
@@ -55,16 +57,17 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 -   [x] [CSS Flexbox Layout](https://teamtreehouse.com/library/css-flexbox-layout)
 -   [ ] [Debugging CSS with Chrome DevTools](https://teamtreehouse.com/library/debugging-css-with-chrome-devtools)
 
-#### 作業
+#### 作業 [Guied line](https://drive.google.com/file/d/1-Vkim3go6l2Q25aKGeG1kyebl7DiENNP/view)
 
-##### [Guied line](https://drive.google.com/file/d/1-Vkim3go6l2Q25aKGeG1kyebl7DiENNP/view)
-
+-   [x] [E-portfolio](https://docs.google.com/forms/d/e/1FAIpQLSc86_L1V9KF85NpyStQIxkZtfp949bHhLgOnXywAD-8kPf-zA/viewform)
 -   [x] [繳交問券](https://docs.google.com/forms/d/e/1FAIpQLSf2aBrtQ7Qk4TRlbUVUJYUUmuRSw96wzmRBDDf2oEgFa73aSA/viewform)
 -   [x] [繳交作業](https://yuuuu0311.github.io/AppworkSchool/week-1/Assignment-1/)
 
 ---
 
 ### 1/17 - 1/23
+
+#### 資源
 
 -   [x] JavaScript Basics
 -   [x] JavaScript Functions
@@ -75,16 +78,17 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 -   [x] Interacting with the DOM
 -   [ ] Debugging JavaScript in the Browser
 
-#### 作業
+#### 作業 [Guied line](https://drive.google.com/file/d/10k6Oqin70dzYDazosfGC_Bd-kxmNFUNu/view)
 
-##### [Guied line](https://drive.google.com/file/d/10k6Oqin70dzYDazosfGC_Bd-kxmNFUNu/view)
-
--   [x] [繳交問券](https://docs.google.com/forms/d/e/1FAIpQLScozIo3BWV1_hdJTY_79OjytuedHK95rF0O8evT9E4CnKwG2Q/viewform)
+-   [x] [E-portfolio](https://docs.google.com/forms/d/e/1FAIpQLSc86_L1V9KF85NpyStQIxkZtfp949bHhLgOnXywAD-8kPf-zA/viewform)
+-   [x] [繳交作業問券](https://docs.google.com/forms/d/e/1FAIpQLScozIo3BWV1_hdJTY_79OjytuedHK95rF0O8evT9E4CnKwG2Q/viewform)
 -   [x] [繳交作業](https://yuuuu0311.github.io/AppworkSchool/week-2/Assignment-1/)
 
 ---
 
 ### 1/24 - 1/30
+
+#### 資源
 
 -   [ ] Array Iteration Methods
 -   [ ] Callback Functions
@@ -95,15 +99,29 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 -   [ ] npm Basics
 -   [ ] Express Basics
 
+#### 作業 [Guied line]()
+
+-   [ ] [E-portfolio](https://docs.google.com/forms/d/e/1FAIpQLSc86_L1V9KF85NpyStQIxkZtfp949bHhLgOnXywAD-8kPf-zA/viewform)
+-   [ ] [繳交作業問券]()
+-   [ ] [繳交作業](https://yuuuu0311.github.io/AppworkSchool/week-3/Assignment-1/)
+
 ---
 
 ### 1/31 - 2/6
+
+#### 資源
 
 -   [ ] Using Create React App
 -   [ ] Deploying a React App
 -   [ ] React Basics
 -   [ ] React Components
 -   [ ] React Hooks
+
+#### 作業 [Guied line]()
+
+-   [ ] [E-portfolio](https://docs.google.com/forms/d/e/1FAIpQLSc86_L1V9KF85NpyStQIxkZtfp949bHhLgOnXywAD-8kPf-zA/viewform)
+-   [ ] [繳交作業問券]()
+-   [ ] [繳交作業](https://yuuuu0311.github.io/AppworkSchool/week-3/Assignment-1/)
 
 ---
 
