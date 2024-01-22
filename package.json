@@ -1,5 +1,16 @@
 {
-  "devDependencies": {
-    "eslint": "^8.56.0"
-  }
+    "devDependencies": {
+        "eslint": "^8.56.0",
+        "pre-commit": "^1.2.2"
+    },
+    "scripts": {
+        "lint": "eslint .",
+        "fix": "eslint --fix ."
+    },
+    "pre-commit": [
+        "lint"
+    ],
+    "dependencies": {
+        "eslint-plugin-spellcheck": "^0.0.20"
+    }
 }

@@ -8,12 +8,10 @@
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
-    "rules": {},
 
-    "scripts": {
-        "lint": "eslint AppworkSchool/*.js", // 跑linter
-        "fix": "eslint --fix AppworkSchool/*.js"
-    },
-
-    "pre-commit": ["lint"]
+    "plugins": ["spellcheck"],
+    "rules": {
+        "no-undef": ["error"],
+        "spellcheck/spell-checker": ["warn"]
+    }
 }

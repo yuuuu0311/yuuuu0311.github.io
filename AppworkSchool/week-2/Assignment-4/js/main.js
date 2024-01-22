@@ -2,7 +2,7 @@ const hearoFadeOutInit = () => {
     const hero = document.querySelector("#welcomHero");
     const sub = document.querySelector("#welcomSub");
 
-    hero.addEventListener("click", (event) => {
+    hero.addEventListener("click", () => {
         hero.classList.remove("active");
         sub.classList.add("active");
     });
