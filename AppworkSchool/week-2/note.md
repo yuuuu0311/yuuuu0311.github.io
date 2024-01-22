@@ -53,6 +53,40 @@ for (const key in object) {
 }
 ```
 
+### DOM (Document Object Modal)
+
+以樹狀結構表述整個網頁的元素
+
+1. eventListener('event', callback function)
+
+    ```javascript
+    document.body.eventListener("event", () => {
+        // do something
+    });
+
+    document.body.eventListener("event", function () {
+        // do something
+    });
+
+    document.body.eventListener("event", callback);
+    ```
+
+2. 創建一個 html DOM
+
+    ```javascript
+    document.createElement("HTMLElement");
+    ```
+
+3. 插入到 DOM Tree 中，有分往前及往後插入
+
+    ```javascript
+    .append(HTMLElement);
+    .prepend(HTMLElement);
+    ```
+
+4. Bubbling 冒泡事件
+5. Event delegation
+
 ### 小技巧
 
 1. 物件也可展開，兩物件展開後合併可參考上方陣列的做法

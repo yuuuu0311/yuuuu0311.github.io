@@ -71,16 +71,16 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 -   [x] JavaScript Loops
 -   [x] JavaScript Arrays
 -   [x] JavaScript Objects
--   [ ] JavaScript and the DOM
--   [ ] Interacting with the DOM
+-   [x] JavaScript and the DOM
+-   [x] Interacting with the DOM
 -   [ ] Debugging JavaScript in the Browser
 
 #### 作業
 
 ##### [Guied line](https://drive.google.com/file/d/10k6Oqin70dzYDazosfGC_Bd-kxmNFUNu/view)
 
--   [ ] [繳交問券](https://docs.google.com/forms/d/e/1FAIpQLSf2aBrtQ7Qk4TRlbUVUJYUUmuRSw96wzmRBDDf2oEgFa73aSA/viewform)
--   [ ] [繳交作業](https://yuuuu0311.github.io/AppworkSchool/week-1/Assignment-1/)
+-   [x] [繳交問券](https://docs.google.com/forms/d/e/1FAIpQLScozIo3BWV1_hdJTY_79OjytuedHK95rF0O8evT9E4CnKwG2Q/viewform)
+-   [x] [繳交作業](https://yuuuu0311.github.io/AppworkSchool/week-2/Assignment-1/)
 
 ---
 
