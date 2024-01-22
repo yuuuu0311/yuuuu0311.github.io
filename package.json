@@ -7,9 +7,6 @@
         "lint": "eslint .",
         "fix": "eslint --fix ."
     },
-    // "pre-commit": [
-    //     "lint"
-    // ],
     "dependencies": {
         "eslint-plugin-spellcheck": "^0.0.20"
     }
