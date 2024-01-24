@@ -5,7 +5,7 @@ function calculate(data) {
     let totalPrice = 0;
 
     for (let index = 0; index < products.length; index++) {
-        totalPrice += products[index]["price"] * (1 - discount);
+        totalPrice += products[index].price * (1 - discount);
     }
 
     return totalPrice;

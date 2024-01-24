@@ -129,3 +129,14 @@ console.log(Object.keys(person).length); // 4
     }
 
 ```
+
+4. [解構賦值](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
+
+```javascript
+// 可將物件中的 vlaue 存在變數中並取用
+const { n1, n2, op } = args;
+
+// n1 == args.n1
+// n2 == args.n2
+// op == args.op
+```

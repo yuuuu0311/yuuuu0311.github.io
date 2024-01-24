@@ -1,15 +1,16 @@
 function calculate(args) {
-    let value = Object.values(args);
+    const { n1, n2, op } = args;
+    // let value = Object.values(args);
 
-    switch (value[2]) {
+    switch (op) {
         case "+":
-            return value[0] + value[1];
+            return n1 + n2;
         case "-":
-            return value[0] - value[1];
+            return n1 - n2;
         case "*":
-            return value[0] * value[1];
+            return n1 * n2;
         case "/":
-            return value[0] / value[1];
+            return n1 / n2;
         default:
             return `Not supported`;
     }
