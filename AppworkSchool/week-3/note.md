@@ -2,130 +2,121 @@
 
 ### 重點
 
-1. Array
-2. Object
-3. DOM
+1. Array Iteration 迭代
 
 ### 筆記
 
-### Array
+### Array Iteration
 
-##### 新增修改
-
-```javascript
-Array.push(ele); // 新增元素到陣列最後面
-Array.unshift(ele); // 新增元素到陣列最前面
-
-Array.shift(); //刪除第一個元素，不接受參數，並同時return被刪除的元素
-Array.pop(); //刪除最後一個元素，不接受參數，並同時return被刪除的元素
-```
-
-##### 展開
+##### forEach
 
 ```javascript
-(...Array) // 將陣列展開
+// 優點：
+// 1. 易懂好閱讀，有內建的參數
+// 2. 不會出現無限迴圈
 
-// 注意這個情境
-let Arr1 = [0, 1, 2, 3];
-let Arr2 = [4, 5, 6, 7];
-let Arr3 = [...Arr1, ...Arr2];
-Arr1.pop()
+// 缺點：
+// 1. 無法終止迭代
 
-console.log(Arr3.length) // 這邊輸出還會是8,因為上面的pop不影響合併後的Arr3
+Array.forEach((element, index) => {
+    // element = 當前迭代的元素
+    // index = 該元素的index值
 
-
+    console.log(element, index);
+});
 ```
 
-##### 查找
+##### filter
 
 ```javascript
-Array.includes(ele); // return wether the element is in the Array or not
-Array.indexOf(ele); // return the index of the element in the Array
-Array.join(", "); // return a String combined all the element in the Array and linked with ", "
+// 優點：
+// 1. 不會修改原陣列，以將過濾資結果放在新陣列中回傳
+
+// if condition statement is true, push that element to new array
+const result = Array.filter((element) => condition statement);
 ```
 
-### Object
-
-##### 迴圈
+##### map
 
 ```javascript
-for (const key in object) {
-    console.log(object[key]);
-}
+// 優點：
+// 1. 和filter有點像，不過map會將原本的陣列直接修改
+
+const arr = [0, 1, 2, 3];
+
+const newArr = arr.map((element) => element++);
+
+console.log(newArr); // [1, 2, 3, 4]
 ```
 
-### DOM (Document Object Modal)
+##### reduce
 
-以樹狀結構表述整個網頁的元素
+```javascript
+// 優點：
+// 1. 回傳單一數值，記得要將每次處理的element return，下次處理才不會是undefined
 
-1. eventListener('event', callback function)
+const arr = [0, 1, 2, 3];
 
-    ```javascript
-    document.body.eventListener("event", () => {
-        // do something
-    });
+const newArr = arr.reduce((returnElement, element) => {
+    returnElement += element;
+    return returnElement;
+}, 0);
 
-    document.body.eventListener("event", function () {
-        // do something
-    });
+console.log(newArr); // 6
+```
 
-    document.body.eventListener("event", callback);
-    ```
-
-2. 創建一個 html DOM
-
-    ```javascript
-    document.createElement("HTMLElement");
-    ```
-
-3. 插入到 DOM Tree 中，有分往前及往後插入
-
-    ```javascript
-    .append(HTMLElement);
-    .prepend(HTMLElement);
-    ```
-
-4. Bubbling 冒泡事件
-5. Event delegation
+---
 
 ### 小技巧
 
-1. 物件也可展開，兩物件展開後合併可參考上方陣列的做法
+1. chaning function
 
-```javascript
-(...Object) // 將陣列展開
+```js
+// 將function以鏈條的方式接續著執行
+
+// ex: 先進行filter在進行reduce
+groceryTotal = purchaseItems
+    .filter((item) => item.dept === "groceries")
+    .reduce((sum, item) => (sum += item.price), 0);
+
+console.log(groceryTotal);
 ```
 
-2.  Object.keys(); 和 Object.values(); 來快速得到物件的 key 和 value
+1. flattening
 
-```javascript
-Object.keys(); //  returns an array containing the keys
-Object.values(); //  returns an array of a given object's property values
+````js
+// 將多維度的陣列扁平化，以一個大的陣列回傳
+        const customers = [
+            {
+                name: "Tyrone",
+                personal: {
+                    age: 33,
+                    hobbies: ["Bicycling", "Camping"],
+                },
+            },
+            {
+                name: "Elizabeth",
+                personal: {
+                    age: 25,
+                    hobbies: ["Guitar", "Reading", "Gardening"],
+                },
+            },
+            {
+                name: "Penny",
+                personal: {
+                    age: 36,
+                    hobbies: ["Comics", "Chess", "Legos"],
+                },
+            },
+        ];
+        let hobbies;
 
-const personProps = Object.keys(person);
-console.log(personProps); // > (4) ["name", "role", "skills", "isTeacher"]
+        // hobbies should be: ["Bicycling", "Camping", "Guitar", "Reading", "Gardening", "Comics", "Chess", "Legos"]
+        // Write your code below
 
-// 看物件長度
-console.log(Object.keys(person).length); // 4
-```
+        hobbies = customers
+            .map((customer) => customer.personal.hobbies)
+            .reduce((arr, hobbies) => [...arr, ...hobbies], []);
 
-3. switch
-
-```javascript
-判斷傳入的參數適合符合 case 然後執行相對應的動作，可更簡潔地完成多種條件判斷
-
-    // Assignment-2
-    switch (value[2]) {
-        case "+":
-            return value[0] + value[1];
-        case "-":
-            return value[0] - value[1];
-        case "*":
-            return value[0] * value[1];
-        case "/":
-            return value[0] / value[1];
-        default:
-            return `Not supported`;
-    }
-
-```
+        console.log(hobbies);```
+````

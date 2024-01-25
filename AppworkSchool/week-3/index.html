@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body></body>
+    <script>
+        const customers = [
+            {
+                name: "Tyrone",
+                personal: {
+                    age: 33,
+                    hobbies: ["Bicycling", "Camping"],
+                },
+            },
+            {
+                name: "Elizabeth",
+                personal: {
+                    age: 25,
+                    hobbies: ["Guitar", "Reading", "Gardening"],
+                },
+            },
+            {
+                name: "Penny",
+                personal: {
+                    age: 36,
+                    hobbies: ["Comics", "Chess", "Legos"],
+                },
+            },
+        ];
+        let hobbies;
+
+        // hobbies should be: ["Bicycling", "Camping", "Guitar", "Reading", "Gardening", "Comics", "Chess", "Legos"]
+        // Write your code below
+
+        hobbies = customers
+            .map((customer) => customer.personal.hobbies)
+            .reduce((arr, hobbies) => [...arr, ...hobbies], []);
+
+        console.log(hobbies);
+    </script>
+</html>

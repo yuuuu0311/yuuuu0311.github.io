@@ -90,7 +90,7 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 
 #### 資源
 
--   [ ] Array Iteration Methods
+-   [x] Array Iteration Methods
 -   [ ] Callback Functions
 -   [ ] Asynchronous Programming with JavaScript
 -   [ ] HTTP Basics
@@ -99,7 +99,7 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 -   [ ] npm Basics
 -   [ ] Express Basics
 
-#### 作業 [Guied line]()
+#### 作業 [Guied line](https://drive.google.com/file/d/14gsxxX2So8imYUrP0GWVmRP07mbw8_NM/view)
 
 -   [ ] [E-portfolio](https://docs.google.com/forms/d/e/1FAIpQLSc86_L1V9KF85NpyStQIxkZtfp949bHhLgOnXywAD-8kPf-zA/viewform)
 -   [ ] [繳交作業問券]()
