@@ -3,6 +3,7 @@
 ### 重點
 
 1. Array Iteration 迭代
+2. Callback function
 
 ### 筆記
 
@@ -63,6 +64,86 @@ const newArr = arr.reduce((returnElement, element) => {
 }, 0);
 
 console.log(newArr); // 6
+```
+
+### Callback function
+
+##### callback
+
+```javascript
+// pass a function to another function as an parmameter
+
+// 命名函示
+const sayHello = (name) => {
+    console.log(`Hello, ${name}`);
+};
+
+const callBack = (parma, callback) => {
+    callback(parma);
+};
+
+callBack("Davis", sayHello);
+
+// 匿名函示
+const func = (callback) => callback();
+
+func(() => {
+    console.log("callback success");
+});
+```
+
+### Asnyc function (同步/非同步)
+
+**重要名詞**
+
+**Call Stack 事件堆疊** : 追蹤程式執行的順序
+
+**Callback queue 事件佇列** : 正在等待放到 Call Stack 的事件
+
+> **Only callbacks for (non-blocking) operations** that are scheduled to complete execution at a later time like setTimeout, setInterval, and AJAX requests, for example, **are added to the callback queue**
+
+**Event Loop 事件循環** : monitor the call stack and callback queue
+
+**需閱讀的補充文件**
+
+[The JavaScript Call Stack](https://teamtreehouse.com/library/asynchronous-programming-with-javascript/the-javascript-call-stack)
+
+[The Callback Queue and Event Loop](https://teamtreehouse.com/library/asynchronous-programming-with-javascript/the-callback-queue-and-event-loop)
+
+##### Promise
+
+```js
+// promise 保證一個非同步運算的最終完成或失敗的物件
+// 可有效避免出現 Callback Hell
+
+.then() // 處理成功的函示
+.catch() // 處理失敗的函示
+.finally() // Promise處理完成的函示（無論處理成功或失敗）
+
+// 範例
+const promiseExample = new Promise((resolve, reject) => {
+    // code here ....
+    if (param) {
+        resolve()
+    } else {
+        reject()
+    }
+})
+
+// 用Ｃhaning function 連起來
+const param = true
+
+promiseExample
+    .then(param)
+    .catch(param)
+    .finally(() => console.log('promise is finish'))
+```
+
+##### Promise.all()
+
+```js
+// promise 保證一個非同步運算的最終完成或失敗的物件
+// 可有效避免出現 Callback Hell
 ```
 
 ---
