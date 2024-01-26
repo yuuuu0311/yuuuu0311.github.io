@@ -91,8 +91,8 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 #### 資源
 
 -   [x] Array Iteration Methods
--   [ ] Callback Functions
--   [ ] Asynchronous Programming with JavaScript
+-   [x] Callback Functions
+-   [x] Asynchronous Programming with JavaScript
 -   [ ] HTTP Basics
 -   [ ] Working with the Fetch API
 -   [ ] Node.js Basics

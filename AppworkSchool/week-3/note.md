@@ -142,8 +142,14 @@ promiseExample
 ##### Promise.all()
 
 ```js
-// promise 保證一個非同步運算的最終完成或失敗的物件
-// 可有效避免出現 Callback Hell
+// 將所有 promise 以一個物件或陣列（？）回傳
+// 注意！若有其中一個小 Promise 處理失敗，是做全部失敗
+```
+
+##### asnyc / awiat
+
+```js
+
 ```
 
 ---
