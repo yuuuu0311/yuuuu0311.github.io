@@ -1,0 +1,19 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body 
+
+        h1 Helow world!!
+
+        if username
+            p username #{username}
+
+        else
+            form(action="/", method="post") 
+
+                label(for="name") your name
+                    input#name(type="text", name="username")
+
+                button(type="submit") Submit

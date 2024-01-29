@@ -1,0 +1,25 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body 
+        
+
+
+        if (!number)
+            p Lack of Parameter
+
+        else if (number > 0 && Number.isInteger(Number(number)))
+            - let content = ""
+            - for (let i = 1; i <= number; i++)
+                - content+= '+' + i
+
+            h1= content
+
+        else           
+            p Wrong Parameter 
+
+        //- if typeof(number) == "string" // 怪怪的, 不可以這樣判斷xyz，因為1111傳進來也是字串
+            
+        

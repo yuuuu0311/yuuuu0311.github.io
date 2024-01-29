@@ -93,10 +93,10 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 -   [x] Array Iteration Methods
 -   [x] Callback Functions
 -   [x] Asynchronous Programming with JavaScript
--   [ ] HTTP Basics
--   [ ] Working with the Fetch API
--   [ ] Node.js Basics
--   [ ] npm Basics
+-   [x] HTTP Basics
+-   [x] Working with the Fetch API
+-   [x] Node.js Basics
+-   [x] npm Basics
 -   [ ] Express Basics
 
 #### 作業 [Guied line](https://drive.google.com/file/d/14gsxxX2So8imYUrP0GWVmRP07mbw8_NM/view)
