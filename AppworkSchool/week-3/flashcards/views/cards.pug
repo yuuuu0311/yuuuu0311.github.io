@@ -1,0 +1,19 @@
+extends layout.pug
+
+block content
+    section#content 
+        h2 Welcome Student
+        p= prompt
+
+        // conditional statement
+        if hint 
+            p
+                i guess what, #{hint}
+        else
+            p (there's no hint)
+
+
+        ul 
+            each color in colors 
+                li= color
+

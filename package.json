@@ -7,6 +7,22 @@
         "fix": "eslint --fix ."
     },
     "dependencies": {
-        "eslint-plugin-spellcheck": "^0.0.20"
-    }
+        "eslint-plugin-spellcheck": "^0.0.20",
+        "express": "^4.18.2",
+        "pug": "^3.0.2"
+    },
+    "name": "yuuuu0311.github.io",
+    "description": "You can use the [editor on GitHub](https://github.com/yuuuu0311/yuuuu0311.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.",
+    "version": "1.0.0",
+    "main": "app.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/yuuuu0311/yuuuu0311.github.io.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/yuuuu0311/yuuuu0311.github.io/issues"
+    },
+    "homepage": "https://github.com/yuuuu0311/yuuuu0311.github.io#readme"
 }

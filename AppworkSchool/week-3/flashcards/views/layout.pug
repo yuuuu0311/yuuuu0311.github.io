@@ -1,0 +1,15 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Flash cards
+    body
+
+        // components can be inject with include
+        include ../includes/header.pug
+        
+        // content can be inject in block
+        block content 
+
+        include ../includes/footer.pug 
+

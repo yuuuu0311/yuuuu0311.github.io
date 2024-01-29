@@ -4,6 +4,8 @@
 
 1. Array Iteration 迭代
 2. Callback function
+3. 非同步
+4. HTTP
 
 ### 筆記
 
@@ -153,6 +155,22 @@ promiseExample
 ```
 
 ---
+
+### HTPP
+
+##### Request Line
+
+```js
+// Request Line
+GET /xml HTTP/1.1 // GET/POST [uri] HTTP[version]
+
+
+// Request Headers
+Host: httpbin.org
+
+
+
+```
 
 ### 小技巧
 
