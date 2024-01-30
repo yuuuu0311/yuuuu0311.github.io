@@ -21,6 +21,8 @@ router.get("/getData", (request, response) => {
 router.post("/getData", (request, response) => {
     const postData = request.body;
 
+    console.log(postData);
+
     if (!postData.number) {
         response.send({ result: `Lack of Parameter` });
     } else if (

@@ -25,7 +25,7 @@
             const getSumBtn = document.querySelector("#getSum");
             const showResult = document.querySelector("#result");
 
-            const getSum = (number) => {
+            const getSumWithFetch = (number) => {
                 fetch("/getData", {
                     method: "POST",
                     headers: {
@@ -34,6 +34,7 @@
                     body: JSON.stringify(number),
                 })
                     .then((response) => {
+                        console.log(response);
                         if (!response.ok) {
                             throw new Error(`HTTP error: ${response.status}`);
                         }
@@ -51,8 +52,35 @@
                     });
             };
 
+            const getSumwithAjax = (url, method, data, callBack) => {
+                const xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = () => {
+                    // console.log(response);
+
+                    if (xhttp.readyState == 4 && xhttp.status == 200) {
+                        const response = JSON.parse(xhttp.response);
+                        showSun(response.result);
+                    }
+                };
+                xhttp.open(method, url, true);
+                xhttp.setRequestHeader("Content-type", "application/json");
+                xhttp.send(JSON.stringify(data));
+            };
+
+            const showSun = (sum) => {
+                showResult.textContent = `${sum}`;
+            };
+
             getSumBtn.addEventListener("click", () => {
-                getSum({ number: getSumInput.value });
+                // getSumWithFetch({ number: getSumInput.value });
+                getSumwithAjax(
+                    "/getData",
+                    "POST",
+                    {
+                        number: getSumInput.value,
+                    },
+                    showSun
+                );
             });
         </script>
     </body>
