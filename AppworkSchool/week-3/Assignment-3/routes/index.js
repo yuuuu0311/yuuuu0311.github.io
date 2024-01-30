@@ -12,6 +12,12 @@ const getData = "getData";
 router.use(express.static("public")); // public 是資料夾名稱
 
 // http://localhost:3000/getData
+router.get("/getData", (request, response) => {
+    console.dir(request.query); // request.query => 取網址參數
+    response.render(getData, { number: request.query.number });
+});
+
+// http://localhost:3000/getData
 router.post("/getData", (request, response) => {
     const postData = request.body;
 
