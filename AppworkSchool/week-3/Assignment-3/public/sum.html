@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- <form action="/getData" method="get"> -->
+        <label for="number">
+            <input
+                type="text"
+                name="number"
+                id="number"
+                placeholder="請輸入一數字"
+            />
+            <input id="getSum" type="submit" value="確認" />
+        </label>
+
+        <p id="result"></p>
+        <!-- </form> -->
+
+        <script>
+            const getSumInput = document.querySelector("#number");
+            const getSumBtn = document.querySelector("#getSum");
+            const showResult = document.querySelector("#result");
+
+            const getSum = (number) => {
+                fetch("/getData", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json", // 少了這個後端收不到資料＝＝
+                    },
+                    body: JSON.stringify(number),
+                })
+                    .then((response) => {
+                        if (!response.ok) {
+                            throw new Error(`HTTP error: ${response.status}`);
+                        }
+
+                        return response.json();
+                    })
+                    .then((result) => {
+                        console.log(result.result);
+                        showResult.textContent = `${result.result}`;
+                    })
+
+                    .catch((error) => {
+                        const err = new Error();
+                        console.error(err);
+                    });
+            };
+
+            getSumBtn.addEventListener("click", () => {
+                getSum({ number: getSumInput.value });
+            });
+        </script>
+    </body>
+</html>

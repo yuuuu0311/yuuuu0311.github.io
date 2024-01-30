@@ -22,8 +22,8 @@ app.get("/getData", (request, response) => {
 
 // http://localhost:3000/getData
 // app.post("/getData", (request, response) => {
-//     console.dir(request.body.number);
-//     response.render(getData, { number: request.body.number });
+//     console.dir(request.query); // request.query => 取網址參數
+//     response.render(getData, { number: request.query.number });
 // });
 
 // web server will be hosted at port at 30000

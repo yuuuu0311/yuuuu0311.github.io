@@ -20,7 +20,7 @@ app.get("/", (req, res) =>
 app.post("/", (req, res) => {
     res.cookie("username", req.body.username);
     // res.json(req.body);
-    // res.render(landingPage, { username: req.body.username });
+    // res.render(landingPage,);
     res.redirect("/welcom");
 });
 
