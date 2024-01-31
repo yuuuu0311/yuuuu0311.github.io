@@ -111,8 +111,8 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 
 #### 資源
 
--   [ ] Using Create React App
--   [ ] Deploying a React App
+-   [x] Using Create React App
+-   [x] Deploying a React App
 -   [ ] React Basics
 -   [ ] React Components
 -   [ ] React Hooks
