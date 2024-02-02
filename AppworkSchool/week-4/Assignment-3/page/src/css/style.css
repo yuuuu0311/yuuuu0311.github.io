@@ -247,6 +247,10 @@ header {
   justify-content: center;
   align-items: center;
 }
+.content-group-item a {
+  color: white;
+  text-decoration: none;
+}
 .content-group.hidden {
   display: none;
 }

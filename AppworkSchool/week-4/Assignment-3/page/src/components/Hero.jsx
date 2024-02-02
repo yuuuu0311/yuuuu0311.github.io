@@ -1,17 +1,28 @@
-const Hero = ({ defaultMsg, greetMsg }) => {
-    const clickHandler = (e) => {
-        const text =
-            e.target.textContent === defaultMsg ? greetMsg : defaultMsg;
+import { useState } from "react";
+import classNames from "classnames";
 
-        e.target.textContent = text;
-        return;
+const Hero = ({ defaultMsg, greetMsg }) => {
+    // state
+    const [showGreet, setShowGreet] = useState(false);
+
+    // style
+    const heroClass = classNames("welcom-hero", { active: !showGreet }); // => 'hamberger active'
+    const subClass = classNames("welcom-sub", { active: showGreet }); // => 'link active'
+
+    // handler
+    const greetHandler = (e) => {
+        showGreet ? setShowGreet(false) : setShowGreet(true);
     };
 
     return (
-        <section>
-            <div onClick={clickHandler}>
-                <h1>Welcome Message</h1>
-            </div>
+        <section className="welcom-section">
+            <h1 className="welcom-container">
+                <div className={heroClass} onClick={greetHandler}>
+                    Welcom Message
+                </div>
+
+                <div className={subClass}>Have a Good Time!</div>
+            </h1>
         </section>
     );
 };
