@@ -1,6 +1,4 @@
-const Hero = (props) => {
-    const { defaultMsg, greetMsg } = props;
-
+const Hero = ({ defaultMsg, greetMsg }) => {
     const clickHandler = (e) => {
         const text =
             e.target.textContent === defaultMsg ? greetMsg : defaultMsg;

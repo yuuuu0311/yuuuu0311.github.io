@@ -1,24 +1,11 @@
-const Content = () => {
-    const contentList = [
-        {
-            label: "github repo",
-            link: "https://github.com/yuuuu0311/yuuuu0311.github.io",
-        },
-        {
-            label: "github repo",
-            link: "https://github.com/yuuuu0311/yuuuu0311.github.io",
-        },
-        {
-            label: "github repo",
-            link: "https://github.com/yuuuu0311/yuuuu0311.github.io",
-        },
-        {
-            label: "github repo",
-            link: "https://github.com/yuuuu0311/yuuuu0311.github.io",
-        },
-    ];
+import { useState } from "react";
 
-    const renderContent = contentList.map((content, index) => {
+const Content = ({ contentList }) => {
+    // hook
+    // const [state, seterFunction] =  useState()
+    let [listData, setListData] = useState(contentList);
+
+    const renderContent = listData.map((content, index) => {
         const { label, link } = content;
         return (
             <li key={index}>
@@ -28,10 +15,15 @@ const Content = () => {
     });
 
     const showContent = () => {
-        contentList.push({
-            label: "github repo",
-            link: "https://github.com/yuuuu0311/yuuuu0311.github.io",
-        });
+        setListData(
+            (listData = [
+                ...listData,
+                {
+                    label: "github repo",
+                    link: "https://github.com/yuuuu0311/yuuuu0311.github.io",
+                },
+            ])
+        );
     };
 
     return (
