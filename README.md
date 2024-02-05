@@ -113,15 +113,15 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 
 -   [x] Using Create React App
 -   [x] Deploying a React App
--   [ ] React Basics
+-   [x] React Basics
 -   [ ] React Components
 -   [ ] React Hooks
 
 #### 作業 [Guied line]()
 
--   [ ] [E-portfolio](https://docs.google.com/forms/d/e/1FAIpQLSc86_L1V9KF85NpyStQIxkZtfp949bHhLgOnXywAD-8kPf-zA/viewform)
+-   [x] [E-portfolio](https://docs.google.com/forms/d/e/1FAIpQLSc86_L1V9KF85NpyStQIxkZtfp949bHhLgOnXywAD-8kPf-zA/viewform)
 -   [ ] [繳交作業問券]()
--   [ ] [繳交作業](https://yuuuu0311.github.io/AppworkSchool/week-3/Assignment-1/)
+-   [x] [繳交作業](https://yuuuu0311.github.io/AppworkSchool/week-3/Assignment-1/)
 
 ---
 
