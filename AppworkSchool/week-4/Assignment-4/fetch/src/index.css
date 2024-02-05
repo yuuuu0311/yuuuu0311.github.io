@@ -11,3 +11,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.name {
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+.visibility {
+  color: rgb(29, 95, 250);
+  font-weight: bolder;
+  font-size: 1.15rem;
+  margin-left: 0.25rem;
+}
+
+.description {
+  margin-top: 0.15rem;
+}
+
+.topics {
+  display: flex;
+  gap: 0.25rem;
+  margin-top: 0.25rem;
+}
+
+.topic {
+  background-color: rgb(29, 95, 250);
+  color: white;
+  border-radius: 999px;
+  padding: 0.15rem 0.75rem;
+}
