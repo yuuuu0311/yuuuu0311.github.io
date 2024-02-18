@@ -36,21 +36,21 @@ const RepoItem = () => {
         <section>
             <ul>
                 {repoList.map((repo) => {
-                    const { id, name, visibility, description, topics } = repo;
-
                     return (
-                        <li key={id}>
+                        <li key={repo.id}>
                             <div>
-                                <span className="name">{name}</span>
-                                <span className="visibility">{visibility}</span>
+                                <span className="name">{repo.name}</span>
+                                <span className="visibility">
+                                    {repo.visibility}
+                                </span>
                             </div>
                             <div>
                                 <span className="description">
-                                    {description}
+                                    {repo.description}
                                 </span>
                             </div>
                             <div className="topics">
-                                {topics.map((topic, index) => {
+                                {repo.topics.map((topic, index) => {
                                     return (
                                         <span key={index} className="topic">
                                             {topic}

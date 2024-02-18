@@ -1,7 +1,10 @@
 import { useState } from "react";
 import classNames from "classnames";
 
-const Nav = ({ navData }) => {
+// mockData
+import { nav } from "../mockData";
+
+const Nav = () => {
     // state
     const [menuToggle, setMenuToggle] = useState(false);
 
@@ -10,7 +13,7 @@ const Nav = ({ navData }) => {
     const linkClass = classNames("link", { active: menuToggle }); // => 'link active'
 
     // render function
-    const renderLink = navData.linkGroup.map((link, index) => {
+    const renderLink = nav.linkGroup.map((link, index) => {
         return <li key={index}>{link.label}</li>;
     });
 

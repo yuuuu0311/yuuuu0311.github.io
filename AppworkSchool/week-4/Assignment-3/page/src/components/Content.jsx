@@ -1,9 +1,12 @@
 import { useState } from "react";
 
-const Content = ({ contentList }) => {
+// mockData
+import { content } from "../mockData";
+
+const Content = () => {
     // hook
     // const [state, seterFunction] =  useState()
-    let [listData, setListData] = useState(contentList);
+    let [listData, setListData] = useState(content);
 
     const contentData = [
         {

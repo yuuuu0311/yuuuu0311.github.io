@@ -1,7 +1,12 @@
 import { useState } from "react";
 import classNames from "classnames";
 
-const Hero = ({ defaultMsg, greetMsg }) => {
+// mockData
+import { hero } from "../mockData";
+
+const Hero = () => {
+    console.log(hero);
+
     // state
     const [showGreet, setShowGreet] = useState(false);
 
@@ -18,10 +23,10 @@ const Hero = ({ defaultMsg, greetMsg }) => {
         <section className="welcom-section">
             <h1 className="welcom-container">
                 <div className={heroClass} onClick={greetHandler}>
-                    Welcom Message
+                    {hero.defaultMsg}
                 </div>
 
-                <div className={subClass}>Have a Good Time!</div>
+                <div className={subClass}> {hero.greetMsg}</div>
             </h1>
         </section>
     );
