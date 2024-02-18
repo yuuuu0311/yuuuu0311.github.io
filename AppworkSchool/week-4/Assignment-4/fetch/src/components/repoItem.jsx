@@ -50,13 +50,11 @@ const RepoItem = () => {
                                 </span>
                             </div>
                             <div className="topics">
-                                {repo.topics.map((topic, index) => {
-                                    return (
-                                        <span key={index} className="topic">
-                                            {topic}
-                                        </span>
-                                    );
-                                })}
+                                {repo.topics.map((topic, index) => (
+                                    <span key={index} className="topic">
+                                        {topic}
+                                    </span>
+                                ))}
                             </div>
                         </li>
                     );
