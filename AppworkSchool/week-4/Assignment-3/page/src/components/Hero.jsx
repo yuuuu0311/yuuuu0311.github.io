@@ -7,7 +7,7 @@ const Hero = ({ defaultMsg, greetMsg }) => {
 
     // style
     const heroClass = classNames("welcom-hero", { active: !showGreet }); // => 'hamberger active'
-    const subClass = classNames("welcom-sub", { active: showGreet }); // => 'link active'
+    const subClass = classNames("welcom-sub", { active: showGreet }); // => 'welcom-sub active'
 
     // handler
     const greetHandler = (e) => {
